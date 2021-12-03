@@ -7,7 +7,6 @@ const Home: NextPage = () => {
             <Head>
                 <title>Under Construction</title>
                 <meta name="description" content="mattsavin.me: Currently under construction!" />
-                <link rel="icon" href={"/favicon.ico"} />
             </Head>
 
             <main className='grid justify-items-center text-lg lg:p-32 p-6 content-center h-screen text-center font-sans'>

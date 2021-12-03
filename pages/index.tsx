@@ -22,7 +22,7 @@ const Home: NextPage = () => {
                     <br /><br />
           It is being built using client and server side rendering using <a href="https://nextjs.org/" className={styles.link}>Next.js</a>
                     <br />
-          Come back later to see how it&quot;s progressed or check out the code on <a href="https://github.com/lamitron/mattsavin.me" target="_blank" rel="noreferrer">Github: lamitron/mattsavin.me</a>
+          Come back later to see how it&quot;s progressed or check out the code on <a href="https://github.com/lamitron/mattsavin.me" target="_blank" rel="noreferrer">GitHub: lamitron/mattsavin.me</a>
                     <br />
             Pull requests are welcome and appreciated!
                 </p>

@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 const Home: NextPage = () => {
     return (
-        <div className='flex flex-col'>
+        <>
             <Head>
                 <title>Under Construction</title>
                 <meta name="description" content="mattsavin.me: Currently under construction!" />
@@ -23,7 +23,7 @@ const Home: NextPage = () => {
             Pull requests are welcome and appreciated!
                 </p>
             </main>
-        </div>
+        </>
     );
 };
 

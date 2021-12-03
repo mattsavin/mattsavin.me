@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import React, {useState} from "react";
 import lamitron from "../public/lamitron_black_on_circle.png";
+import styles from "./navbar.module.css";
 
 const Navbar: () => JSX.Element = () => {
     const [sidebar, setSidebar] = useState(false);
@@ -11,20 +12,21 @@ const Navbar: () => JSX.Element = () => {
             <nav className='flex items-center flex-wrap bg-gray-600 p-3 '>
                 <Link href='/'>
                     <a className='inline-flex items-center p-2 mr-4 '>
-                        <span className='text-xl text-white font-bold uppercase tracking-wide items-center'>
+                        <span className='text-2xl text-white font-bold uppercase tracking-wide items-center'>
                             <div>
                                 <Image
-                                    className='float-left'
+                                    className='align-center block m-auto'
                                     alt="lamitron logo"
                                     src={lamitron}
                                     width={28}
                                     height={28}
                                 />
-                                <p className='float-right px-5'>Matthew Savin</p>
+                                <p className={`float-right px-5 ${styles.title}`}>Matthew Savin</p>
                             </div>
                         </span>
                     </a>
                 </Link>
+
                 <button className='inline-flex p-3 hover:bg-gray-500 rounded lg:hidden text-white ml-auto hover:text-white outline-none'>
                     <a onClick={showSidebar}>
                         <svg
@@ -42,7 +44,6 @@ const Navbar: () => JSX.Element = () => {
                             />
                         </svg>
                     </a>
-
                 </button>
 
                 <div className={'w-full lg:inline-flex lg:flex-grow lg:w-auto'}>

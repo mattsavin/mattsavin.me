@@ -1,12 +1,13 @@
 import Link from "next/link";
+import styles from "./navbar.module.css";
 
 const navbar = () => {
     return (
         <nav>
-            <div>
-                <h1>Matt Savin</h1>
+            <div className={styles.nav}>
+                <h1 className={styles.heading}>Matthew Savin</h1>
             </div>
-            <Link href="/">Home</Link>
+
         </nav>
     );
 };

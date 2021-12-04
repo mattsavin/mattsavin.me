@@ -3,12 +3,17 @@ import Image from 'next/image';
 import React, {useState} from "react";
 import lamitron from "../public/lamitron_black_on_circle.png";
 import styles from "./navbar.module.css";
+import Head from 'next/head';
 
 const Navbar: () => JSX.Element = () => {
     const [sidebar, setSidebar] = useState(false);
     const showSidebar = () => setSidebar(!sidebar);
     return (
         <>
+            <Head>
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet" />
+            </Head>
             <nav className='flex items-center flex-wrap bg-gray-600 p-3 '>
                 <Link href='/'>
                     <a className='inline-flex items-center p-2 mr-4 '>

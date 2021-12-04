@@ -3,8 +3,9 @@ import Image from 'next/image';
 import React, {useState} from "react";
 import lamitron from "../public/lamitron_black_on_circle.png";
 import styles from "./navbar.module.css";
+import {NextPage} from "next";
 
-const Navbar: () => JSX.Element = () => {
+const Navbar: NextPage = (): JSX.Element => {
     const [sidebar, setSidebar] = useState(false);
     const showSidebar = () => setSidebar(!sidebar);
     return (

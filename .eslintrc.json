@@ -1,7 +1,36 @@
 {
-  "extends": "next/core-web-vitals",
+  "extends": [
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "prettier"
+  ],
   "rules": {
     "semi": "error",
-    "indent": ["error", 4]
-  }
+    "indent": ["error", 4],
+    "strict": "error"
+  },
+  "globals": {
+    "React": true,
+    "google": true,
+    "mount": true,
+    "mountWithRouter": true,
+    "shallow": true,
+    "shallowWithRouter": true,
+    "context": true,
+    "expect": true,
+    "jsdom": true,
+    "JSX": true
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"], // Your TypeScript files extension
+      "parserOptions": {
+        "project": ["tsconfig.json"]
+      }
+    }
+  ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"]
 }

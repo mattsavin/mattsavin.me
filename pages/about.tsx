@@ -12,7 +12,7 @@ const About: NextPage = () => {
             <main>
                 <section className={styles.mainHeader}>
                     <div className={styles.headingLeft}>
-                        <h1 className={styles.headingLeft}>Hi! I&#39;m Matthew <br />An aspiring young computer scientist</h1>
+                        <h1 className={styles.headingLeft}>Hi! I&#39;m Matthew <br />An aspiring young<br />computer scientist</h1>
                     </div>
                     <div className={styles.headingRight}>
 

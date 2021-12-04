@@ -1,5 +1,13 @@
+.mainHeader {
+    padding: var(--padding);
+    font-family: var(--fonts);
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
 .headingLeft {
     color: var(--text-color);
+    font-size: var(--font-size-heading);
 }
 
 .headingRight {

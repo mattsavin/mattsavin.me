@@ -27,7 +27,8 @@ const Navbar: () => JSX.Element = () => {
                 </Link>
 
                 <button className={styles.expandButton}>
-                    <a onClick={showSidebar}>
+                    <a onClick={showSidebar}
+                        className={styles.expandButton}>
                         <svg
                             className={styles.svg}
                             fill='none'

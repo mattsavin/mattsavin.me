@@ -19,17 +19,11 @@
     }
 }
 
-
-@media (min-width: 1024px) {
-    :root {
-        --padding: 8rem;
-        --link-color: #3b82f6;
-    }
-}
-
 :root {
     --padding: 1.5rem;
     --fonts: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
+    --link-color: #3b82f6;
+    --font-size-heading: 1.5rem;
 }
 
 a {
@@ -52,5 +46,9 @@ button {
 
 }
 
-
-
+@media (min-width: 1024px) {
+    :root {
+        --padding: 8rem;
+        --font-size-heading: 3.5rem;
+    }
+}

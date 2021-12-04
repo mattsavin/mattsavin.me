@@ -2,8 +2,8 @@
   display: grid;
   justify-items: center;
   font-size: 1.125rem;
+  min-height: 90vh;
   align-content: center;
-  height: calc(100vh - 74px);
   text-align: center;
   padding: var(--padding);
   font-family: var(--fonts);

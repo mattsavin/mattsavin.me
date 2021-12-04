@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import React, {useState} from "react";
 import lamitron from "../public/lamitron_black_on_circle.png";
-import styles from "./navbar.module.css";
+import styles from "./navbar.module.scss";
 
 const Navbar: () => JSX.Element = () => {
     const [sidebar, setSidebar] = useState(false);

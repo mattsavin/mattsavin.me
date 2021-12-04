@@ -1,6 +1,8 @@
 import {NextPage} from "next";
 import Head from "next/head";
 import styles from "./about.module.css";
+import Image from "next/image";
+import climbing from "../public/climbing.png";
 
 const About: NextPage = () => {
     return(
@@ -15,7 +17,12 @@ const About: NextPage = () => {
                         <h1 className={styles.headingLeft}>Hi! I&#39;m Matthew <br />An aspiring young<br />computer scientist</h1>
                     </div>
                     <div className={styles.headingRight}>
-
+                        <Image
+                            alt={"Climbing"}
+                            src={climbing}
+                            width={526.5}
+                            height={653.25}
+                        />
                     </div>
                 </section>
 

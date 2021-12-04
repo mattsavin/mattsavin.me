@@ -3,7 +3,7 @@
   justify-items: center;
   font-size: 1.125rem;
   align-content: center;
-  height: 100vh;
+  height: calc(100vh - 74px);
   text-align: center;
   padding: var(--padding);
   font-family: var(--fonts);

@@ -3,7 +3,7 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    box-shadow: 0 5px 10px 0 #111111;
+    box-shadow: 0 2px 2px 0 #1c1c1c;
     display: flex;
     align-items: center;
     flex-wrap: wrap;

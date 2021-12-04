@@ -10,7 +10,7 @@ const Portfolio: NextPage = () => {
                 <meta name="description" content="Matthew Savin's Portfolio of Exemplar Work" />
             </Head>
             <main className={styles.main}>
-                <h1 className={styles.title}>My Portfolio</h1>
+                <h1>My Activities</h1>
             </main>
         </>
     );

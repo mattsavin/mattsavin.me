@@ -45,5 +45,12 @@ body {
     background-color: var(--bg-color);
 }
 
+button {
+    border-radius: 0;
+    border: none;
+    background: none;
+
+}
+
 
 

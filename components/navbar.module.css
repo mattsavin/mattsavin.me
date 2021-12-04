@@ -1,5 +1,5 @@
 .nav {
-    width: auto;
+    width: 100%;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -61,7 +61,7 @@
 }
 
 .navlinks {
-    width: 100%;
+    width: fit-content;
     align-items: flex-start;
     display: flex;
     flex-direction: column;
@@ -103,6 +103,9 @@
     }
     .expandButton {
         display: none;
+    }
+    .nav {
+        width: auto;
     }
     .link {
         display: inline-flex;

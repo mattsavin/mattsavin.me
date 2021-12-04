@@ -47,6 +47,8 @@
     font-weight: 700;
     align-items: center;
     justify-content: center;
+    background: var(--nav-bg-color);
+    transition: 0.3s;
 }
 
 .menu {

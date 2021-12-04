@@ -1,5 +1,6 @@
 import {NextPage} from "next";
 import Head from "next/head";
+import styles from "./portfolio.module.css";
 
 const Portfolio: NextPage = () => {
     return(
@@ -8,7 +9,7 @@ const Portfolio: NextPage = () => {
                 <title>My Portfolio - Matthew Savin</title>
                 <meta name="description" content="Matthew Savin's Portfolio of Exemplar Work" />
             </Head>
-            <main>
+            <main className={styles.main}>
                 <h1 className="text-5xl font-bold">My Portfolio</h1>
             </main>
         </>

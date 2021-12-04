@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #1f2937;
+        --text-color: #ffffff;
+        --nav-bg-color: #444852;
+    }
+}
+@media (prefers-color-scheme: light){
+    :root {
+        --bg-color: #ffffff;
+        --text-color: #000000;
+        --nav-bg-color: #a1a1a1;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    :root {
+        --padding: 8rem;
+        --link-color: #3b82f6;
+    }
+}
+
+:root {
+    --padding: 1.5rem;
+    --fonts: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
+}
+
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+

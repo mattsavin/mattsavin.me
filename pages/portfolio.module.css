@@ -1,0 +1,6 @@
+.main {
+    padding: var(--padding);
+    font-family: var(--fonts);
+    color: var(--text-color);
+    background: var(--bg-color);
+}

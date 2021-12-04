@@ -1,0 +1,108 @@
+.nav {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background: var(--nav-bg-color);
+    padding: 0.75rem;
+}
+
+.title {
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-weight: 700;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.title p {
+    float: right;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem;
+    margin-right: 1rem;
+}
+
+.link:hover {
+    text-decoration: none;
+    background: #6b7280;
+}
+
+.link {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    color: white;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    width: 100%;
+    position: sticky;
+}
+
+.navlinksHidden {
+    display: none;
+}
+
+.navlinks {
+    width: 100%;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.expandButton {
+    display: inline-flex;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    color: white;
+    margin-left: auto;
+    outline: none;
+}
+
+.expandButton:hover {
+    background: #6b7280;
+    color: white;
+}
+
+.svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+    .menu {
+        display: inline-flex;
+        flex-grow: 1;
+        width: auto;
+    }
+    .navlinks,
+    .navlinksHidden {
+        display: inline-flex;
+        flex-direction: row;
+        margin-left: auto;
+        width: auto;
+        align-items: center;
+        height: auto;
+    }
+    .expandButton {
+        display: none;
+    }
+    .link {
+        display: inline-flex;
+        width: auto;
+    }
+}

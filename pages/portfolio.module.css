@@ -1,0 +1,11 @@
+.main {
+    padding: var(--padding);
+    font-family: var(--fonts);
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+}

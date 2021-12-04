@@ -10,28 +10,28 @@ const Navbar: NextPage = (): JSX.Element => {
     const showSidebar = () => setSidebar(!sidebar);
     return (
         <>
-            <nav className='flex items-center flex-wrap bg-gray-600 p-3 '>
+            <nav className={styles.nav}>
                 <Link href='/'>
-                    <a className='inline-flex items-center p-2 mr-4 '>
-                        <span className='text-2xl text-white font-bold uppercase tracking-wide items-center'>
+                    <a className={styles.logo}>
+                        <span className={styles.title}>
                             <div>
                                 <Image
-                                    className='align-center block m-auto'
-                                    alt="lamitron logo"
+                                    alt="logo"
                                     src={lamitron}
                                     width={28}
                                     height={28}
                                 />
-                                <p className={`float-right px-5 ${styles.title}`}>Matthew Savin</p>
+                                <p className={styles.title}>Matthew Savin</p>
                             </div>
                         </span>
                     </a>
                 </Link>
 
-                <button className='inline-flex p-3 hover:bg-gray-500 rounded lg:hidden text-white ml-auto hover:text-white outline-none'>
-                    <a onClick={showSidebar}>
+                <button className={styles.expandButton}>
+                    <a onClick={showSidebar}
+                        className={styles.expandButton}>
                         <svg
-                            className='w-6 h-6'
+                            className={styles.svg}
                             fill='none'
                             stroke='currentColor'
                             viewBox='0 0 24 24'
@@ -47,22 +47,16 @@ const Navbar: NextPage = (): JSX.Element => {
                     </a>
                 </button>
 
-                <div className={'w-full lg:inline-flex lg:flex-grow lg:w-auto'}>
-                    <div className={`${!sidebar ? 'hidden': ''} lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto`}>
+                <div className={styles.menu}>
+                    <div className={sidebar ? styles.navlinks : styles.navlinksHidden}>
                         <Link href='/'>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-500 hover:text-white '>
-                                Home
-                            </a>
+                            <a className={styles.link}>Home</a>
                         </Link>
                         <Link href={'/portfolio'}>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-500 hover:text-white'>
-                                Portfolio
-                            </a>
+                            <a className={styles.link}>Portfolio</a>
                         </Link>
                         <Link href={'/about'}>
-                            <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-gray-500 hover:text-white'>
-                                About me
-                            </a>
+                            <a className={styles.link}>About me</a>
                         </Link>
                     </div>
                 </div>

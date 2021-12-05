@@ -65,9 +65,18 @@ button {
 
 }
 
-@media (min-width: 800px) {
+@media only screen and (min-width: 688px) {
+
+}
+
+@media only screen and (min-width: 992px) {
     :root {
         --padding: 8rem;
         --font-size-heading: 3.5rem;
     }
 }
+
+@media only screen and (min-width: 1312px) {
+
+}
+

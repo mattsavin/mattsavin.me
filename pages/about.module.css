@@ -2,7 +2,7 @@
     font-family: var(--fonts);
     color: var(--text-color);
     background: var(--bg-color);
-    max-width: 100%;
+    width: 100%;
 }
 
 .headingLeft {
@@ -23,13 +23,24 @@
     z-index: 0;
 }
 
+.climbing {
+
+}
+
+.description {
+    display: inline-flex;
+}
+
 .yosemite {
-    background: var(--bg-color);
+
+}
+
+.filler {
+    height: 20vh;
 }
 
 .black {
     background: #121212;
-    display: inline-flex;
 }
 
 @media only screen and (min-width: 688px) {

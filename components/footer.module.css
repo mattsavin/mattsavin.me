@@ -1,12 +1,15 @@
 @media (prefers-color-scheme: dark) {
     .footer {
-        --footer-bg-color: #121212;
-        --footer-text-color: var(--text-color);
+        --footer-bg-color: #bfbfbf;
+        --footer-text-color: #1a1a1a;
     }
 }
 
 
 .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: var(--footer-bg-color);
     color: var(--footer-text-color);
     position: absolute;

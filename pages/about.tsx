@@ -16,17 +16,19 @@ const About: NextPage = () => {
                 <section className={styles.mainHeader}>
                     <div className={styles.headingLeft}>
                         <span>
-                            <h1>Hi! I&#39;m Matthew <br />An aspiring young<br />computer scientist</h1>
+                            <h1>Hi! I&#39;m Matthew<br />An aspiring young<br />computer scientist</h1>
                         </span>
                     </div>
                     <div className={styles.headingRight}>
                         <Image
+                            className={styles.climbing}
                             alt={"Climbing"}
                             src={climbing}
                             width={526.5}
                             height={653.25}
                         />
                     </div>
+                    <div className={`${styles.filler} ${styles.black}`} />
                 </section>
                 <section className={styles.description}>
                     <div className={styles.black}>

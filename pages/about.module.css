@@ -87,9 +87,13 @@
     }
     .about {
         margin: 3rem;
-        max-width: 35%;
+        width: 50%;
     }
 
+    .aboutFlex {
+        max-width: 70%;
+        float: right;
+    }
 }
 
 @media only screen and (min-width: 1312px) {

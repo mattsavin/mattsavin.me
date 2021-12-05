@@ -3,7 +3,7 @@ import Head from "next/head";
 import styles from "./about.module.css";
 import Image from "next/image";
 import climbing from "../public/climbing.png";
-import yosemite from "../public/IMG_20190413_125347_crop_fade.png";
+import yosemite from "../public/IMG_20190413_125347_crop_fade_b.png";
 
 const About: NextPage = () => {
     return(
@@ -24,22 +24,37 @@ const About: NextPage = () => {
                             className={styles.climbing}
                             alt={"Climbing"}
                             src={climbing}
-                            width={526.5}
-                            height={653.25}
+                            width={810}
+                            height={456}
                         />
                     </div>
-                    <div className={`${styles.filler} ${styles.black}`} />
                 </section>
                 <section className={styles.description}>
-                    <div className={styles.black}>
-                        <Image
-                            className={styles.yosemite}
-                            src={yosemite}
-                            alt={"Yoesmite"}
-                        />
-                    </div>
-                    <div className={styles.black}>
+                    <div className={styles.parent}>
+                        <div className={styles.yosemite}>
+                            <Image
+                                src={yosemite}
+                                alt={"Yoesmite"}
+                            />
+                        </div>
+                        <div className={styles.about}>
+                            <div className={styles.aboutFlex}>
+                                <h2 className={styles.about}>About Me</h2>
+                                <span className={styles.aboutParagraph}>
+                                    <p>
+                                    Born and raised in Berkshire, I&#39;ve always had a passion for computers.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua.
+                                        <br />
+                                        <br />
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                </span>
+                            </div>
 
+                        </div>
                     </div>
                 </section>
             </main>

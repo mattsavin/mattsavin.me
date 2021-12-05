@@ -4,8 +4,26 @@ import styles from "./about.module.css";
 import Image from "next/image";
 import climbing from "../public/climbing.png";
 import yosemite from "../public/yosemite.png";
+import white_zigzag_img from "../public/white_zigzag.png";
+import black_zigzag_img from "../public/black_zigzag.png";
 
 const About: NextPage = () => {
+    const whiteZigzag = (
+        <Image
+            className={styles.zigzag}
+            src={white_zigzag_img}
+            alt={""}
+        />
+    );
+
+    const blackZigzag = (
+        <Image
+            className={styles.zigzag}
+            src={black_zigzag_img}
+            alt={""}
+        />
+    );
+
     return(
         <>
             <Head>
@@ -15,6 +33,17 @@ const About: NextPage = () => {
             <main>
                 <section className={styles.mainHeader}>
                     <div className={styles.headingLeft}>
+                        <div className={styles.zigzag} >
+                            {
+
+                            }
+                            <Image
+                                className={styles.zigzag}
+                                src={white_zigzag_img}
+                                alt={""}
+                            />
+                        </div>
+
                         <span>
                             <h1>Hi! I&#39;m Matthew<br />An aspiring young<br />computer scientist</h1>
                         </span>

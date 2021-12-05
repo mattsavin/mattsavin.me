@@ -1,3 +1,16 @@
+@media (prefers-color-scheme: dark) {
+    .aboutFlex {
+        --about-bg-color: rgba(18, 18, 18, 0.53);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .aboutFlex {
+        --about-bg-color: rgba(216, 216, 216, 0.53);
+    }
+}
+
+
 .mainHeader {
     font-family: var(--fonts);
     color: var(--text-color);
@@ -9,10 +22,15 @@
     justify-content: center;
 }
 
+.zigzag {
+    max-width: 10em;
+}
+
 .headingLeft {
     display: flex;
     justify-content :center;
     align-items: center;
+    flex-direction: column;
     font-weight: 700;
     color: var(--text-color);
     padding: 5rem 1rem;
@@ -73,7 +91,7 @@
     flex-direction: column;
     margin: 3rem 1rem;
     padding: 1rem;
-    background: rgba(18, 18, 18, 0.53);
+    background: var(--about-bg-color);
 }
 
 .parent {

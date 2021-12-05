@@ -12,7 +12,7 @@
 @media (prefers-color-scheme: light){
     :root {
         --bg-color: #ffffff;
-        --text-color: #000000;
+        --text-color: #121212;
         --nav-bg-color: #a1a1a1;
     }
 }

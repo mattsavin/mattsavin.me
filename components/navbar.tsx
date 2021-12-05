@@ -27,7 +27,7 @@ const Navbar: NextPage = (): JSX.Element => {
                     </a>
                 </Link>
 
-                <button className={`inline-flex p-3 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none ${styles.expandButton}`}>
+                <button className={`inline-flex p-3rounded lg:hidden text-white ml-auto hover:text-white outline-none ${styles.expandButton}`}>
                     <a onClick={showSidebar}
                         className={styles.expandButton}>
                         <svg
@@ -50,13 +50,13 @@ const Navbar: NextPage = (): JSX.Element => {
                 <div className={`w-full lg:inline-flex lg:flex-grow lg:w-auto ${styles.menu}`}>
                     <div className={`${sidebar ? styles.navlinks : styles.navlinksHidden} lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto`}>
                         <Link href='/'>
-                            <a className={`${styles.link} lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white`}>Home</a>
+                            <a className={`${styles.link} lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:text-white`}>Home</a>
                         </Link>
                         <Link href={'/portfolio'}>
-                            <a className={`${styles.link} lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white`}>Portfolio</a>
+                            <a className={`${styles.link} lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:text-white`}>Portfolio</a>
                         </Link>
                         <Link href={'/about'}>
-                            <a className={`${styles.link} lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white`}>About me</a>
+                            <a className={`${styles.link} lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center0 hover:text-white`}>About me</a>
                         </Link>
                     </div>
                 </div>

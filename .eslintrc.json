@@ -7,15 +7,7 @@
   "rules": {
     "semi": "error",
     "indent": ["error", 4],
-    "strict": "error",
-    "@typescript-eslint/tslint/config": ["warn", {
-      "rules": {
-
-      },
-      "rulesDirectory": [
-
-      ]
-    }]
+    "strict": "error"
   },
   "globals": {
     "React": true,

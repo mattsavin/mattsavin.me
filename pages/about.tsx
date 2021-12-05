@@ -5,10 +5,10 @@ import Image from "next/image";
 import climbing from "../public/climbing.png";
 import yosemite from "../public/yosemite.png";
 import white_zigzag_img from "../public/white_zigzag.png";
-import black_zigzag_img from "../public/black_zigzag.png";
+// import black_zigzag_img from "../public/black_zigzag.png";
 
 const About: NextPage = () => {
-    const whiteZigzag = (
+    /*const whiteZigzag = (
         <Image
             className={styles.zigzag}
             src={white_zigzag_img}
@@ -22,7 +22,7 @@ const About: NextPage = () => {
             src={black_zigzag_img}
             alt={""}
         />
-    );
+    );*/
 
     return(
         <>

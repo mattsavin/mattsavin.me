@@ -41,7 +41,6 @@
     "parserOptions": {
       "project": "tsconfig.json"
     },
-    "plugins": ["@typescript-eslint/tslint"],
   "ignorePatterns": [
     "*.config.js"
   ]

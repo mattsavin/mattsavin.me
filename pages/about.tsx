@@ -8,7 +8,7 @@ import white_zigzag_img from "../public/white_zigzag.png";
 import black_zigzag_img from "../public/black_zigzag.png";
 
 const About: NextPage = () => {
-    let zigzagTop: JSX.Element;//, zigzagBottom: JSX.Element;
+    let zigzagTop: JSX.Element, zigzagBottom: JSX.Element;
 
     if (process.browser && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         zigzagTop = (
@@ -27,7 +27,7 @@ const About: NextPage = () => {
             />
         );
     }
-    /*
+
     if (process.browser && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         zigzagBottom = (
             <Image
@@ -44,7 +44,7 @@ const About: NextPage = () => {
                 alt={""}
             />
         );
-    }*/
+    }
 
     return(
         <>
@@ -73,34 +73,61 @@ const About: NextPage = () => {
                     </div>
                 </section>
                 <section className={styles.description}>
-                    <div className={styles.parent}>
-                        <div className={styles.yosemite}>
-                            <Image
-                                src={yosemite}
-                                alt={"Yoesmite"}
-                            />
-                        </div>
-                        <div className={styles.about}>
-                            <div className={styles.aboutFlex}>
-                                <h2 className={styles.aboutHeading}>About Me</h2>
-                                <div className={styles.divider} />
-                                <span className={styles.subtitle}>
-                                    <p>Hi, I&#39;m Matthew and I love working with computers.</p>
-                                </span>
-                                <span className={styles.aboutParagraph}>
-                                    <p>
-                                    Born and raised in Berkshire, I&#39;ve always had a passion for computers.
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                    ut labore et dolore magna aliqua.
-                                        <br />
-                                        <br />
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                    </p>
-                                </span>
+                    <div className={styles.contrastingColor}>
+                        <div className={styles.parent}>
+                            <div className={styles.yosemite}>
+                                <Image
+                                    src={yosemite}
+                                    alt={"Yoesmite"}
+                                />
+                            </div>
+                            <div className={styles.about}>
+                                <div className={styles.aboutFlex}>
+                                    <h2 className={styles.aboutHeading}>About Me</h2>
+                                    <div className={styles.divider} />
+                                    <span className={styles.subtitle}>
+                                        <p>Hi, I&#39;m Matthew and I love working with computers.</p>
+                                    </span>
+                                    <span className={styles.aboutParagraph}>
+                                        <p>
+                                            Born and raised in Berkshire, I&#39;ve always had a passion for computers.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                            ut labore et dolore magna aliqua.
+                                            <br />
+                                            <br />
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        </p>
+                                    </span>
+                                </div>
                             </div>
                         </div>
+                    </div>
+
+                </section>
+                <section className={styles.statsContainer}>
+                    <div className={styles.zigzag}>
+                        {zigzagBottom}
+                    </div>
+                    <div className={styles.stats}>
+                        <span className={styles.stat}>
+                            <h2>10 +</h2>
+                            <div className={styles.statDivider} />
+                            <p>GitHub Repositories</p>
+                        </span>
+
+                        <span className={styles.stat}>
+                            <h2>600 +</h2>
+                            <div className={styles.statDivider} />
+                            <p>Open Source Contributions</p>
+                        </span>
+
+                        <span className={styles.stat}>
+                            <h2>4</h2>
+                            <div className={styles.statDivider} />
+                            <p>A* Predicted Grades</p>
+                        </span>
                     </div>
                 </section>
             </main>

@@ -12,7 +12,7 @@ const About: NextPage = () => {
                 <meta name="description" content="About Matthew Savin: an aspiring and talented young computer scientist." />
             </Head>
             <main>
-                <section className={styles.mainHeader}>
+                <section className={`${styles.mainHeader}`}>
                     <div className={styles.headingLeft}>
                         <span>
                             <h1>Hi! I&#39;m Matthew <br />An aspiring young<br />computer scientist</h1>

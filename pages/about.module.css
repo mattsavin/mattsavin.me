@@ -1,31 +1,25 @@
 .mainHeader {
-    position: static;
     font-family: var(--fonts);
     color: var(--text-color);
     background: var(--bg-color);
-    padding-top: 105px;
-    padding-bottom: 105px;
     max-width: 100%;
 }
 
 .headingLeft {
-    display: flex;
-    width: 50%;
+    min-height: 70vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-width: 50%;
     font-weight: 700;
     color: var(--text-color);
-    font-size: var(--font-size-heading);
-    float: left;
+    padding: 0 1rem;
+    font-size: 2.5rem
 }
 
 .headingRight {
-    margin-top: -105px;
-    margin-bottom: -105px;
-    width: 50%;
-    align-content: center;
-    text-align: left;
+    min-width: 50%;
     z-index: 0;
-    position: relative;
-    float: right;
 }
 
 @media only screen and (min-width: 688px) {

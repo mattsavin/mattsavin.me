@@ -5,24 +5,27 @@ import Image from "next/image";
 import climbing from "../public/climbing.png";
 import yosemite from "../public/yosemite.png";
 import white_zigzag_img from "../public/white_zigzag.png";
-// import black_zigzag_img from "../public/black_zigzag.png";
+import black_zigzag_img from "../public/black_zigzag.png";
 
 const About: NextPage = () => {
-    /*const whiteZigzag = (
-        <Image
-            className={styles.zigzag}
-            src={white_zigzag_img}
-            alt={""}
-        />
-    );
-
-    const blackZigzag = (
-        <Image
-            className={styles.zigzag}
-            src={black_zigzag_img}
-            alt={""}
-        />
-    );*/
+    let zigzag;
+    if (process.browser && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        zigzag = (
+            <Image
+                className={styles.zigzag}
+                src={white_zigzag_img}
+                alt={""}
+            />
+        );
+    } else {
+        zigzag = (
+            <Image
+                className={styles.zigzag}
+                src={black_zigzag_img}
+                alt={""}
+            />
+        );
+    }
 
     return(
         <>
@@ -34,16 +37,8 @@ const About: NextPage = () => {
                 <section className={styles.mainHeader}>
                     <div className={styles.headingLeft}>
                         <div className={styles.zigzag} >
-                            {
-
-                            }
-                            <Image
-                                className={styles.zigzag}
-                                src={white_zigzag_img}
-                                alt={""}
-                            />
+                            {zigzag}
                         </div>
-
                         <span>
                             <h1>Hi! I&#39;m Matthew<br />An aspiring young<br />computer scientist</h1>
                         </span>

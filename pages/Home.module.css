@@ -2,7 +2,7 @@
   display: grid;
   justify-items: center;
   font-size: 1.125rem;
-  min-height: 90vh;
+  min-height: 70vh;
   align-content: center;
   text-align: center;
   padding: var(--padding);

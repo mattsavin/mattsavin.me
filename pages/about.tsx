@@ -18,6 +18,7 @@ const About: NextPage = () => {
                     </div>
                     <div className={styles.headingRight}>
                         <Image
+                            className={styles.headingRight}
                             alt={"Climbing"}
                             src={climbing}
                             width={526.5}

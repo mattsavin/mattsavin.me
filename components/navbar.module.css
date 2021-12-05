@@ -1,4 +1,5 @@
 .nav {
+    z-index: 1;
     width: 100vw;
     position: -webkit-sticky;
     position: sticky;
@@ -49,6 +50,7 @@
     justify-content: center;
     background: var(--nav-bg-color);
     transition: 0.3s;
+    font-family: var(--fonts);
 }
 
 .menu {
@@ -61,7 +63,7 @@
 }
 
 .navlinks {
-    width: fit-content;
+    width: 90%;
     align-items: flex-start;
     display: flex;
     flex-direction: column;

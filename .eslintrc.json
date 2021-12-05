@@ -2,14 +2,20 @@
   "extends": [
     "next/core-web-vitals",
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "prettier"
   ],
   "rules": {
     "semi": "error",
     "indent": ["error", 4],
-    "strict": "error"
+    "strict": "error",
+    "@typescript-eslint/tslint/config": ["warn", {
+      "rules": {
+
+      },
+      "rulesDirectory": [
+
+      ]
+    }]
   },
   "globals": {
     "React": true,
@@ -32,5 +38,8 @@
     }
   ],
     "parser": "@typescript-eslint/parser",
-    "plugins": ["@typescript-eslint"]
+    "parserOptions": {
+      "project": "tsconfig.json"
+    },
+    "plugins": ["@typescript-eslint/tslint"]
 }

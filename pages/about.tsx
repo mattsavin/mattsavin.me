@@ -3,7 +3,7 @@ import Head from "next/head";
 import styles from "./about.module.css";
 import Image from "next/image";
 import climbing from "../public/climbing.png";
-import yosemite from "../public/IMG_20190413_125347_crop_fade_b.png";
+import yosemite from "../public/yosemite.png";
 
 const About: NextPage = () => {
     return(

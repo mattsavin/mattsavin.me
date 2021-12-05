@@ -14,11 +14,12 @@ const About: NextPage = () => {
             <main>
                 <section className={styles.mainHeader}>
                     <div className={styles.headingLeft}>
-                        <h1 className={styles.headingLeft}>Hi! I&#39;m Matthew <br />An aspiring young<br />computer scientist</h1>
+                        <span>
+                            <h1>Hi! I&#39;m Matthew <br />An aspiring young<br />computer scientist</h1>
+                        </span>
                     </div>
                     <div className={styles.headingRight}>
                         <Image
-                            className={styles.headingRight}
                             alt={"Climbing"}
                             src={climbing}
                             width={526.5}

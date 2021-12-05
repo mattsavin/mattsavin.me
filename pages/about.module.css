@@ -1,21 +1,33 @@
 .mainHeader {
-    padding: var(--padding);
+    position: static;
     font-family: var(--fonts);
     color: var(--text-color);
     background: var(--bg-color);
+    padding-top: 105px;
+    padding-bottom: 105px;
     display: flex;
     flex-direction: row;
-    width: 100%;
+    max-width: 100%;
     justify-content: center;
 }
 
 .headingLeft {
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 50%;
+    font-weight: 700;
     color: var(--text-color);
     font-size: var(--font-size-heading);
     float: left;
 }
 
 .headingRight {
+    margin-top: -105px;
+    margin-bottom: -105px;
+    width: 50%;
+    align-content: center;
+    text-align: left;
     z-index: 0;
     position: relative;
     float: right;

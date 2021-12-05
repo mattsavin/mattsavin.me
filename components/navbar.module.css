@@ -97,7 +97,7 @@
     height: 1.5rem;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 800px) {
     .menu {
         display: inline-flex;
         flex-grow: 1;

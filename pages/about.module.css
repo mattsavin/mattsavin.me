@@ -6,22 +6,20 @@
 }
 
 .headingLeft {
-    min-height: 70vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    min-width: 50%;
     font-weight: 700;
     color: var(--text-color);
-    padding: 0 1rem;
+    padding: 5rem 1rem;
     font-size: 2.5rem
 }
 
 .headingRight {
+    padding: 5rem 1rem;
     display:flex;
     justify-content:center;
     align-items:center;
-    min-width: 50%;
     z-index: 0;
 }
 
@@ -30,6 +28,14 @@
 }
 
 @media only screen and (min-width: 992px) {
+    .headingLeft {
+        float: left;
+        max-width: 50%;
+    }
+    .headingRight {
+        float: right;
+        max-width: 50%;
+    }
 
 }
 

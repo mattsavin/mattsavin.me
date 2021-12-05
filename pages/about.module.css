@@ -44,12 +44,28 @@
     grid-row: 1;
 }
 
-.about h2 {
+.divider {
+    width: 20%;
+    margin: 7px 0 15px 0;
+    height: 2px;
+    background-color: dimgrey;
+}
+
+.aboutHeading {
     max-width: 100%;
     margin: unset;
     padding: unset;
     font-size: 3rem;
     font-weight: 700;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.aboutParagraph {
+    margin-top: 1rem;
 }
 
 .aboutFlex {
@@ -68,7 +84,15 @@
 }
 
 @media only screen and (min-width: 688px) {
+    .about {
+        margin: 3rem;
+        width: 50%;
+    }
 
+    .aboutFlex {
+        max-width: 80%;
+        float: right;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -85,17 +109,17 @@
         float: right;
         max-width: 50%;
     }
-    .about {
-        margin: 3rem;
-        width: 50%;
-    }
-
     .aboutFlex {
         max-width: 70%;
-        float: right;
     }
 }
 
 @media only screen and (min-width: 1312px) {
-
+    .aboutFlex {
+        margin: 5rem;
+        max-width: 60%;
+    }
+    .aboutParagraph {
+        margin-top: 2rem;
+    }
 }

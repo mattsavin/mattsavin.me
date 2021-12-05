@@ -39,7 +39,11 @@ const About: NextPage = () => {
                         </div>
                         <div className={styles.about}>
                             <div className={styles.aboutFlex}>
-                                <h2 className={styles.about}>About Me</h2>
+                                <h2 className={styles.aboutHeading}>About Me</h2>
+                                <div className={styles.divider} />
+                                <span className={styles.subtitle}>
+                                    <p>Hi, I&#39;m Matthew and I love working with computers.</p>
+                                </span>
                                 <span className={styles.aboutParagraph}>
                                     <p>
                                     Born and raised in Berkshire, I&#39;ve always had a passion for computers.
@@ -53,7 +57,6 @@ const About: NextPage = () => {
                                     </p>
                                 </span>
                             </div>
-
                         </div>
                     </div>
                 </section>

@@ -8,9 +8,10 @@ import white_zigzag_img from "../public/white_zigzag.png";
 import black_zigzag_img from "../public/black_zigzag.png";
 
 const About: NextPage = () => {
-    let zigzag;
+    let zigzagTop: JSX.Element;//, zigzagBottom: JSX.Element;
+
     if (process.browser && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        zigzag = (
+        zigzagTop = (
             <Image
                 className={styles.zigzag}
                 src={white_zigzag_img}
@@ -18,7 +19,7 @@ const About: NextPage = () => {
             />
         );
     } else {
-        zigzag = (
+        zigzagTop = (
             <Image
                 className={styles.zigzag}
                 src={black_zigzag_img}
@@ -26,6 +27,24 @@ const About: NextPage = () => {
             />
         );
     }
+    /*
+    if (process.browser && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        zigzagBottom = (
+            <Image
+                className={styles.zigzag}
+                src={black_zigzag_img}
+                alt={""}
+            />
+        );
+    } else {
+        zigzagBottom = (
+            <Image
+                className={styles.zigzag}
+                src={white_zigzag_img}
+                alt={""}
+            />
+        );
+    }*/
 
     return(
         <>
@@ -37,7 +56,7 @@ const About: NextPage = () => {
                 <section className={styles.mainHeader}>
                     <div className={styles.headingLeft}>
                         <div className={styles.zigzag} >
-                            {zigzag}
+                            {zigzagTop}
                         </div>
                         <span>
                             <h1>Hi! I&#39;m Matthew<br />An aspiring young<br />computer scientist</h1>

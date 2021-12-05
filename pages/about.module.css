@@ -101,6 +101,12 @@
     grid-column-start: 1;
 }
 
+.stats {
+    color: var(--contrasting-text-color);
+    background-color: var(--contrasting-bg-color);
+    padding: 2rem;
+}
+
 @media only screen and (min-width: 688px) {
     .about {
         margin: 3rem;

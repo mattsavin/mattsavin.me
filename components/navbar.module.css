@@ -1,39 +1,19 @@
 .nav {
-    z-index: 1;
-    width: 100vw;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
     box-shadow: 0 2px 2px 0 #1c1c1c;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
     background: var(--nav-bg-color);
-    padding: 0.75rem;
 }
-
 .title {
     font-family: 'Fjalla One', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.025em;
-    font-weight: 700;
     color: white;
-    font-size: 1.5rem;
-    line-height: 2rem;
 }
 
 .title p {
+    line-height: 1.8rem;
     float: right;
     padding-left: 0.75rem;
     padding-right: 0;
 }
 
-.logo {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.5rem;
-    margin-right: 1rem;
-}
 
 .link:hover {
     text-decoration: none;
@@ -41,32 +21,13 @@
 }
 
 .link {
-    width: 100%;
-    padding: 0.5rem 0.75rem;
-    border-radius: 0.25rem;
-    color: white;
-    font-weight: 700;
-    align-items: center;
-    justify-content: center;
     background: var(--nav-bg-color);
     transition: 0.3s;
     font-family: var(--fonts);
 }
 
-.menu {
-    width: 100%;
-    position: sticky;
-}
-
 .navlinksHidden {
     display: none;
-}
-
-.navlinks {
-    width: 90%;
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
 }
 
 .expandButton {

@@ -1,27 +1,6 @@
-blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre, body, html {
-    margin: 0;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-size: inherit;
-    font-weight: inherit;
-}
-ol, ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-img, svg, video, canvas, audio, iframe, embed, object {
-    display: block;
-    vertical-align: middle;
-}
-*, ::before, ::after {
-    border-width: 0;
-    border-style: solid;
-    box-sizing: border-box;
-}
-.google-map * {
-    border-style: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @media (prefers-color-scheme: dark) {
     :root {

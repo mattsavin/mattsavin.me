@@ -10,10 +10,10 @@ const Navbar: NextPage = (): JSX.Element => {
     const showSidebar = () => setSidebar(!sidebar);
     return (
         <>
-            <nav className={styles.nav}>
+            <nav className={`m-0 sticky top-0 flex items-center flex-wrap p-3 ${styles.nav}`}>
                 <Link href='/'>
-                    <a className={styles.logo}>
-                        <span className={styles.title}>
+                    <a className={`inline-flex items-center p-2 mr-4 justify-center ${styles.logo}`}>
+                        <span className={`text-xl text-white font-bold uppercase tracking-wide ${styles.title}`}>
                             <div>
                                 <Image
                                     alt="logo"
@@ -27,7 +27,7 @@ const Navbar: NextPage = (): JSX.Element => {
                     </a>
                 </Link>
 
-                <button className={styles.expandButton}>
+                <button className={`inline-flex p-3 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none ${styles.expandButton}`}>
                     <a onClick={showSidebar}
                         className={styles.expandButton}>
                         <svg
@@ -47,16 +47,16 @@ const Navbar: NextPage = (): JSX.Element => {
                     </a>
                 </button>
 
-                <div className={styles.menu}>
-                    <div className={sidebar ? styles.navlinks : styles.navlinksHidden}>
+                <div className={`w-full lg:inline-flex lg:flex-grow lg:w-auto ${styles.menu}`}>
+                    <div className={`${sidebar ? styles.navlinks : styles.navlinksHidden} lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto`}>
                         <Link href='/'>
-                            <a className={styles.link}>Home</a>
+                            <a className={`${styles.link} lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white`}>Home</a>
                         </Link>
                         <Link href={'/portfolio'}>
-                            <a className={styles.link}>Portfolio</a>
+                            <a className={`${styles.link} lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white`}>Portfolio</a>
                         </Link>
                         <Link href={'/about'}>
-                            <a className={styles.link}>About me</a>
+                            <a className={`${styles.link} lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white`}>About me</a>
                         </Link>
                     </div>
                 </div>

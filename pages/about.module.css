@@ -5,16 +5,11 @@
     background: var(--bg-color);
     padding-top: 105px;
     padding-bottom: 105px;
-    display: flex;
-    flex-direction: row;
     max-width: 100%;
-    justify-content: center;
 }
 
 .headingLeft {
     display: flex;
-    padding-left: 2rem;
-    padding-right: 2rem;
     width: 50%;
     font-weight: 700;
     color: var(--text-color);
@@ -31,4 +26,16 @@
     z-index: 0;
     position: relative;
     float: right;
+}
+
+@media only screen and (min-width: 688px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1312px) {
+
 }

@@ -23,11 +23,13 @@
     "@typescript-eslint/eslint-plugin": "^5.5.0",
     "@typescript-eslint/eslint-plugin-tslint": "^5.5.0",
     "@typescript-eslint/parser": "^5.5.0",
-    "autoprefixer": "^10.4.0",
+    "autoprefixer": "^9.8.8",
     "eslint": "7.32.0",
     "eslint-config-next": "12.0.4",
     "eslint-config-prettier": "^8.3.0",
+    "postcss": "^7.0.39",
     "prettier": "^2.5.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
     "typescript": "^4.5.2"
   }
 }

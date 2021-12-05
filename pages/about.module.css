@@ -18,6 +18,9 @@
 }
 
 .headingRight {
+    display:flex;
+    justify-content:center;
+    align-items:center;
     min-width: 50%;
     z-index: 0;
 }

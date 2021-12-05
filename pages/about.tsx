@@ -59,7 +59,15 @@ const About: NextPage = () => {
                             {zigzagTop}
                         </div>
                         <span>
-                            <h1>Hi! I&#39;m Matthew<br />An aspiring young<br />computer scientist</h1>
+                            <h1>Hi! I&#39;m&nbsp;
+                                <span className={"brand"}>
+                                    Matthew
+                                </span>
+                                <br />
+                                 An aspiring young
+                                <br />
+                                computer scientist
+                            </h1>
                         </span>
                     </div>
                     <div className={styles.headingRight}>
@@ -112,13 +120,13 @@ const About: NextPage = () => {
                     </div>
                     <div className={styles.stats}>
                         <span className={styles.stat}>
-                            <h2>10 +</h2>
+                            <h2>10+</h2>
                             <div className={styles.statDivider} />
                             <p>GitHub Repositories</p>
                         </span>
 
                         <span className={styles.stat}>
-                            <h2>600 +</h2>
+                            <h2>600+</h2>
                             <div className={styles.statDivider} />
                             <p>Open Source Contributions</p>
                         </span>

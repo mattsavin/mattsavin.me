@@ -33,6 +33,7 @@
 
 .title {
     font-family: 'Fjalla One', sans-serif;
+    color: var(--brand-color);
 }
 
 .title p {
@@ -40,6 +41,7 @@
     float: right;
     padding-left: 0.75rem;
     padding-right: 0;
+
 }
 
 

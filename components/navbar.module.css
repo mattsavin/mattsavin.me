@@ -26,6 +26,10 @@
     }
 }
 
+.hidden {
+    display: none;
+}
+
 .nav {
     z-index: 1;
     background: var(--nav-bg-color);

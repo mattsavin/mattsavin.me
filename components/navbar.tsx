@@ -53,7 +53,7 @@ const Navbar: NextPage = (): JSX.Element => {
                             <a className={`${styles.link} lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center`}>Home</a>
                         </Link>
                         <Link href={'/portfolio'}>
-                            <a className={`${styles.link} lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center`}>Portfolio</a>
+                            <a className={`${styles.link} ${styles.hidden} lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center`}>Portfolio</a>
                         </Link>
                         <Link href={'/about'}>
                             <a className={`${styles.link} lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center`}>About me</a>

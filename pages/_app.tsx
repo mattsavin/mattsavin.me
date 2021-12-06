@@ -2,16 +2,9 @@ import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import Layout from "../components/layout";
 import Head from "next/head";
-import { getAnalytics, logEvent } from "firebase/analytics";
-import React, {  useEffect } from 'react';
-import { app } from "../firebase/firebase";
+import React from 'react';
 
 function MyApp({ Component, pageProps }: AppProps) {
-    useEffect(() => {
-        const analytics = getAnalytics(app);
-        logEvent(analytics, 'notification_received');
-    });
-
     return(
         <>
             <Head>

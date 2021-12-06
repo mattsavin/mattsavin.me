@@ -14,7 +14,7 @@ const Navbar: NextPage = (): JSX.Element => {
                 <Link href='/'>
                     <a className={`inline-flex items-center p-2 mr-4 justify-center ${styles.logo}`}>
                         <span className={`text-xl text-white font-bold uppercase tracking-wide ${styles.title}`}>
-                            <div>
+                            <div className={styles.logo}>
                                 <Image
                                     alt="logo"
                                     src={lamitron}
@@ -58,6 +58,14 @@ const Navbar: NextPage = (): JSX.Element => {
                         <Link href={'/about'}>
                             <a className={`${styles.link} lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center`}>About me</a>
                         </Link>
+                        <a
+                            className={`${styles.link} lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center`}
+                            href="https://github.com/lamitron/mattsavin.me/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            GitHub
+                        </a>
                     </div>
                 </div>
             </nav>

@@ -41,9 +41,14 @@
     float: right;
     padding-left: 0.75rem;
     padding-right: 0;
-
 }
 
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
 .link:hover {
     text-decoration: none;

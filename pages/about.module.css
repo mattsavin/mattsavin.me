@@ -20,7 +20,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    min-height: 50vh;
 }
 
 .zigzag {
@@ -39,7 +39,7 @@
     min-width: 50%;
 }
 .headingRight {
-    padding: 5rem 0;
+    padding: 0 0 5rem 0;
     display:flex;
     justify-content:center;
     align-items:center;

@@ -20,7 +20,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 75vh;
+
 }
 
 .zigzag {
@@ -108,6 +108,7 @@
 }
 
 .statsContainer {
+    min-height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,6 +116,7 @@
     color: var(--contrasting-text-color);
     background-color: var(--contrasting-bg-color);
     padding: 2rem;
+    font-size: 1.5rem;
 }
 
 .stats {

@@ -2,65 +2,47 @@
 
 This is the source code for https://mattsavin.me/
 
-It has been written in [Typescript](https://www.typescriptlang.org/), a superset of [JavaScript](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/) and runs on a [Node.js](https://nodejs.org) + [Next.js](https://nextjs.org/) server hosted for free on an [Amazon Web Services](https://aws.amazon.com/) [Elastic Cloud](https://aws.amazon.com/ec2/) instance.
+It has been written in [Typescript](https://www.typescriptlang.org/), a superset of [JavaScript](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/) and runs on a [Node.js](https://nodejs.org) + [Next.js](https://nextjs.org/) server hosted for free on an [Amazon Web Services](https://aws.amazon.com/) [Elastic Cloud](https://aws.amazon.com/ec2/) instance.  
 The instance is running [Ubuntu](https://ubuntu.com/) [Server 20.04 LTS](https://ubuntu.com/server) with [Nginx](https://nginx.org/) used as a reverse proxy for the production version of the Next.js server.
 
 Next.js is an open-source JavaScript framework developed by Vercel and based on React.js. Next.js uses core features of React such as components, whilst enabling the use of extra features such as server-side rendering.
 
 ## More about JavaScript
+JavaScript is a Multi-paradigm, Event-driven, Functional and Imperative programming language which conforms to the specification described by ECMAScript, published by [ECMA International](https://ecma-international.org/) to enforce interoperability of web pages across browsers.
+JS was first developed in 1995, and has since developed into a powerful language which is used by over 97% of websites, and implemented in browsers and server-side applications with engines such as the Chromium V8 engine (also used in Node.js) and SpiderMonkey, the original JavaScript engine initially developed at Netscape, now open sourced and maintained by the Mozilla foundation and most notable for use in the Firefox web browser. Both V8 and SpiderMonkey now implement Just-In-Time compilation to x86, ARM or other machine code implementations, and are written mostly in C/C++.
+JavaScript alone is a dynamic, weakly-typed language, but with the addition of TypeScript can become strongly typed.
 
 ## More about TypeScript
+TypeScript is strict syntactical superset of JavaScript which optionally adds static typing, transitioning the language to become more strongly-typed.  TypeScript is maintained and developed primarily by [Microsoft](https://microsoft.com/), but is free and open source software. TypeScript transcompiles directly to JavaScript via the `tsc` compiler, itself written in TypeScript.
 
 ## More about React
-[React.js](https://reactjs.org/) is an open-source JavaScript library for building user interfaces based on components.
-React and React-based applications use a special syntax, namely JSX or TSX (for JavaScript and TypeScript respectively) for declaring components. JSX allows developers like me to easily combine JavaScript with HTML markup.
+[React.js](https://reactjs.org/) is an open-source JavaScript library for building user interfaces based on components.  
+React and React-based applications use a special syntax, namely JSX or TSX (for JavaScript and TypeScript respectively) for declaring components. JSX allows developers like me to easily combine JavaScript with HTML markup.  
 Although powerful on its own, however, React can only be used for state management and manipulation of the Document Object Model.
 
 ## More about Node.js
+Node.js is a cross-platform runtime environment for the back-end that allows developers such as myself to create full-stack applications using only one language: JavaScript (or a superset that transcompiles, such as TypeScript).
+Node.js runs on the Chromium V8 engine and allows for JavaScript to be executed outside of a web browser.
 
 ## More about Next.js
+Next.js is an opinionated development framework which is built on top of Node.js, enabling React features such as components to coexist with features such as server-side rendering to allow better performance for search engine optimization.
+Next.js is maintained and lead by Vercel, although it is published under an MIT license, making it free and open source software.
 
 ## More about Nginx
+Nginx, pronounced "Engine X", is a free and open-source web server, accounting for approximately 23% of the busiest million websites, second only to Apache. In addition to serving static pages from a web root directory, Nginx can be used as a reverse proxy, a load balancer, and a HTTP cache, among other uses.
+
+My project uses Nginx for its ease of configuration, popularity, and ability to be used as a reverse proxy - it forwards incoming requests on port 80 and 443 to the Next.js server listening on port 3000.
 
 ## More about Ubuntu
+Ubuntu is a mostly free and open-source Linux distribution developed and maintained primarily by Canonical Ltd., and based on Debian, a notoriously stable distribution.
+
+I've chosen Ubuntu for my project for its popularity, open-source nature and my intense familiarity with Linux distributions, particularly those based on Debian.
 
 ## More about AWS
+Amazon Web Services provide cloud computing and APIs to developers and companies, of which my primary use is Elastic Cloud Computer (EC2), in which I am running an instance of Ubuntu Server 20.04 LTS, configured with an Elastic IP for use with DNS nameservers.
 
 ## More about this site's domain
+The website (https://mattsavin.me/) is registered with Namecheap, configured to use Cloudflare's DNS servers, analytics tools, DNSSEC signing, SSL certificates, HSTS enforcing and TLS cipher enforcing. SSL certificates, HSTS and TLS can also be managed with certbot to generate and store certificates managed by Let's Encrypt, if needed.
+Cloudflare also provides a firewall, anti-DDOS protection, and performance analysis to ensure the site stays up, no matter what.
 
-## More information about this project
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-### Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-### Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-### Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+TODO: AWS, Email, internet.nl score 

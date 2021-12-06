@@ -55,6 +55,12 @@ const Navbar: NextPage = (): JSX.Element => {
                         <Link href={"/portfolio"}>
                             <a className={`${styles.link} lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center`}>Portfolio</a>
                         </Link>
+                        <Link href={"/about"}>
+                            <a className={`${styles.link} lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center`}>About</a>
+                        </Link>
+                        <Link href={"/blog"}>
+                            <a className={`${styles.link} lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center`}>Blog</a>
+                        </Link>
                         <a
                             className={`${styles.link} lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center`}
                             href="https://github.com/lamitron/mattsavin.me/"

@@ -2,13 +2,13 @@
 
 @media (prefers-color-scheme: dark) {
     .aboutFlex {
-        --about-bg-color: rgba(18, 18, 18, 0.53);
+        --about-bg-color: rgba(18, 18, 18, 0.75);
     }
 }
 
 @media (prefers-color-scheme: light) {
     .aboutFlex {
-        --about-bg-color: rgba(216, 216, 216, 0.53);
+        --about-bg-color: rgba(216, 216, 216,0.75);
     }
 }
 
@@ -79,12 +79,13 @@
     height: 10rem;
     width: 100%;
     position: absolute;
+    z-index: -1;
 }
 
 .divider {
     width: 20%;
     margin: 7px 0 15px 0;
-    height: 2px;
+    height: 5px;
     background-color: dimgrey;
 }
 
@@ -108,9 +109,10 @@
 .aboutFlex {
     display: flex;
     flex-direction: column;
-    margin: 3rem 1rem;
+    margin: 3rem 1rem 10rem 1rem;
     padding: 1rem;
     background: var(--about-bg-color);
+    z-index: 2;
 }
 
 .parent {

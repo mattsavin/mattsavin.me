@@ -5,7 +5,6 @@ import type {NextPage} from "next"; // NextPage type for TypeScript type-checkin
 import Head from "next/head"; // Used to modify HTML <head> element - providing page metadata
 import styles from "./index.module.css"; // Import CSS styles from corresponding CSS module
 import Image from "next/image"; // Used for displaying images
-import Script from "next/script"; // For creating Google rich result script
 
 // Imports for various images used on the page
 import climbing from "../public/climbing.webp";
@@ -60,20 +59,21 @@ const Home: NextPage = () => {
                     content="About Matthew Savin: an aspiring and talented young computer scientist who has always had a passion for computers, currently studying in the United Kingdom at a Sixth Form in Berkshire"
                 />
             </Head>
-            <Script id={"google-rich-results"} type={"application/ld+json"}>
-                {
-                    {
-                        "@context": "https://mattsavin.me/",
-                        "@type": "NewsArticle",
-                        "headline": "About Me: Matthew Savin",
-                        "datePublished": "2021-12-06",
-                        "author": {
-                            "@type": "Person",
-                            "name": "Matthew Savin"
+            <script type={"application/ld+json"} dangerouslySetInnerHTML={{
+                __html:
+                    `
+                        {
+                            "@context": "https://mattsavin.me/",
+                            "@type": "NewsArticle",
+                            "headline": "About Me: Matthew Savin",
+                            "datePublished": "2021-12-06",
+                            "author": {
+                                "@type": "Person",
+                                "name": "Matthew Savin"
+                            }
                         }
-                    }
-                }
-            </Script>
+                    `
+            }} />
             <main>
                 <section className={styles.mainHeader}>
                     <div className={styles.headingLeft}>

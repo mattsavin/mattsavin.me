@@ -144,3 +144,5 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+// TODO: create sitemap.xml

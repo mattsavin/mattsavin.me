@@ -27,6 +27,7 @@
     --link-color: #3b82f6;
     --font-size-heading: 1.5rem;
     --brand-color: #0f33ff;
+    color: var(--text-color);
 }
 
 a {

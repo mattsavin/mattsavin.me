@@ -50,11 +50,12 @@
 }
 
 .contrastingColor {
-    background-color: var(--contrasting-bg-color);
+    background: var(--contrasting-bg-color);
     z-index: -3;
 }
 
 .description {
+    position: relative;
     display: inline-flex;
     color: var(--text-color);
 }
@@ -65,9 +66,19 @@
 }
 
 .yosemite {
+    background: url("../public/yosemite.png") no-repeat scroll 70% 90% / cover;
+    margin-bottom: 6px;
     z-index: -1;
     grid-column: 1;
     grid-row: 1;
+}
+
+.yosemiteBuffer {
+    background-image: linear-gradient(to bottom, transparent, var(--contrasting-bg-color));
+    bottom: 0;
+    height: 10rem;
+    width: 100%;
+    position: absolute;
 }
 
 .divider {

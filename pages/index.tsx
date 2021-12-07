@@ -8,7 +8,6 @@ import Image from "next/image"; // Used for displaying images
 
 // Imports for various images used on the page
 import climbing from "../public/climbing.png";
-import yosemite from "../public/yosemite.png";
 import white_zigzag_img from "../public/white_zigzag.png";
 import black_zigzag_img from "../public/black_zigzag.png";
 
@@ -55,11 +54,9 @@ const Home: NextPage = () => {
         <>
             <Head>
                 <title>Matthew Savin: About Matthew Savin</title>
-                <meta name="description" content="
-                Author: Matthew Savin,
-                Date: 2021-12-06,
-                Age: 16,
-                About Matthew Savin: an aspiring and talented young computer scientist, currently studying in the United Kingdom at a Sixth Form in Berkshire"
+                <meta
+                    name="description"
+                    content="About Matthew Savin: an aspiring and talented young computer scientist who has always had a passion for computers, currently studying in the United Kingdom at a Sixth Form in Berkshire"
                 />
             </Head>
             <main>
@@ -94,10 +91,6 @@ const Home: NextPage = () => {
                     <div className={styles.contrastingColor}>
                         <div className={styles.parent}>
                             <div className={styles.yosemite}>
-                                <Image
-                                    src={yosemite}
-                                    alt={"Yoesmite"}
-                                />
                             </div>
                             <div className={styles.about}>
                                 <div className={styles.aboutFlex}>
@@ -109,20 +102,30 @@ const Home: NextPage = () => {
                                     <span className={styles.aboutParagraph}>
                                         <p>
                                             Born and raised in Berkshire, I&#39;ve always had a passion for computers.
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                            ut labore et dolore magna aliqua.
+                                            <br />
+                                            I began simple programming with python at age 7, and since then, my interest has only grown.
+                                            Some of my first programs involved rudimentary experimentation with core
+                                            programming and computer science concepts such as selection and iteration.
+                                            One of the more complex programs I was working on at the time involved
+                                            simple user interface components with <code>JavaFX.Swing</code> to create a
+                                            basic (and not very secure!) login window that replied with
+                                            &quot;<code>Hello, &#123;username&#125;</code>&quot;, replacing
+                                            <code>&#123;username&#125;</code> with the username they had been assigned.
                                             <br />
                                             <br />
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            Since then, my interests have developed into a deep love of Linux and all
+                                            things open-source since I first used a Raspberry Pi at age 8, just one short
+                                            year after the Model B&#39;s initial release. I still use Raspberry Pis and
+                                            Linux regularly to this day - my daily driver operating system is currently
+                                            openSUSE Tumbleweed, and I use a Raspberry Pi to host films and video for me
+                                            and my family to watch using Plex, as well as a Samba storage server.
                                         </p>
                                     </span>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <div className={styles.yosemiteBuffer} />
                 </section>
                 <section className={styles.statsContainer}>
                     <div className={styles.zigzag}>

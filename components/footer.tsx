@@ -8,7 +8,7 @@ const Footer: NextPage = () => {
         return (
             <>
                 <footer className={styles.tempFooter}>
-                    <h1>mattsavin.me</h1>
+                    <h1>mattsavin.me, All content &copy; 2021 Matthew Savin</h1>
                 </footer>
             </>
         );

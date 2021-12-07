@@ -5,6 +5,7 @@ import type {NextPage} from "next"; // NextPage type for TypeScript type-checkin
 import Head from "next/head"; // Used to modify HTML <head> element - providing page metadata
 import styles from "./index.module.css"; // Import CSS styles from corresponding CSS module
 import Image from "next/image"; // Used for displaying images
+import Script from "next/script"; // For creating Google rich result script
 
 // Imports for various images used on the page
 import climbing from "../public/climbing.webp";
@@ -53,12 +54,26 @@ const Home: NextPage = () => {
     return(
         <>
             <Head>
-                <title>Matthew Savin: About Matthew Savin</title>
+                <title>About Matthew Savin, a talented young computer scientist | Matthew Savin</title>
                 <meta
                     name="description"
                     content="About Matthew Savin: an aspiring and talented young computer scientist who has always had a passion for computers, currently studying in the United Kingdom at a Sixth Form in Berkshire"
                 />
             </Head>
+            <Script id={"google-rich-results"} type={"application/ld+json"}>
+                {
+                    {
+                        "@context": "https://mattsavin.me/",
+                        "@type": "NewsArticle",
+                        "headline": "About Me: Matthew Savin",
+                        "datePublished": "2021-12-06",
+                        "author": {
+                            "@type": "Person",
+                            "name": "Matthew Savin"
+                        }
+                    }
+                }
+            </Script>
             <main>
                 <section className={styles.mainHeader}>
                     <div className={styles.headingLeft}>
@@ -103,7 +118,7 @@ const Home: NextPage = () => {
                                         <p>
                                             Born and raised in Berkshire, I&#39;ve always had a passion for computers.
                                             <br />
-                                            I began simple programming with python at age 7, and since then, my interest has only grown.
+                                            I began simple programming with Python at age 7, and since then, my interest has only grown.
                                             Some of my first programs involved rudimentary experimentation with core
                                             programming and computer science concepts such as selection and iteration.
                                             One of the more complex programs I was working on at the time involved

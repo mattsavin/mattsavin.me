@@ -4,7 +4,7 @@ import {NextPage} from "next";
 import styles from "./footer.module.css";
 
 const Footer: NextPage = () => {
-    if (process.env.NODE_ENV == "development") {
+    if (process.env.NODE_ENV == "production") {
         return (
             <>
                 <footer className={styles.tempFooter}>

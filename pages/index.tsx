@@ -54,8 +54,13 @@ const Home: NextPage = () => {
     return(
         <>
             <Head>
-                <title>Matthew Savin: About Me</title>
-                <meta name="description" content="About Matthew Savin: an aspiring and talented young computer scientist." />
+                <title>Matthew Savin: About Matthew Savin</title>
+                <meta name="description" content="
+                Author: Matthew Savin,
+                Date: 2021-12-06,
+                Age: 16,
+                About Matthew Savin: an aspiring and talented young computer scientist, currently studying in the United Kingdom at a Sixth Form in Berkshire"
+                />
             </Head>
             <main>
                 <section className={styles.mainHeader}>

@@ -63,7 +63,7 @@ const Home: NextPage = () => {
                 __html:
                     `
                         {
-                            "@context": "http://schema.org/",
+                            "@context": "https://schema.org/",
                             "@type": "NewsArticle",
                             "headline": "About Me: Matthew Savin",
                             "datePublished": "2021-12-06",

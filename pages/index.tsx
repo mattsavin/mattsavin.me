@@ -168,7 +168,7 @@ const Home: NextPage = () => {
                     </div>
                 </section>
                 <section className={styles.stillInterested}>
-                    <h1>Still interested?</h1>
+                    <h1 className={styles.interestHeader}>Still interested?</h1>
                     <h2>
                         <Link href={"/about"}>
                             <a>Read more about this website</a>

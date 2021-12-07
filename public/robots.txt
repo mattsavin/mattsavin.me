@@ -1,2 +1,4 @@
+# Disallow: Finding an Easter Egg
+
 User-agent: *
 Sitemap: http://mattsavin.me/sitemap.xml

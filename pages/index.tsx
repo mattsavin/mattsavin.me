@@ -7,9 +7,9 @@ import styles from "./index.module.css"; // Import CSS styles from corresponding
 import Image from "next/image"; // Used for displaying images
 
 // Imports for various images used on the page
-import climbing from "../public/climbing.png";
-import white_zigzag_img from "../public/white_zigzag.png";
-import black_zigzag_img from "../public/black_zigzag.png";
+import climbing from "../public/climbing.webp";
+import white_zigzag_img from "../public/white_zigzag.webp";
+import black_zigzag_img from "../public/black_zigzag.webp";
 
 const Home: NextPage = () => {
     let zigzagTop: JSX.Element, zigzagBottom: JSX.Element; // Declaring

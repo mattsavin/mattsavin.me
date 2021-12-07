@@ -66,7 +66,7 @@
 }
 
 .yosemite {
-    background: url("../public/yosemite.png") no-repeat scroll 70% 90% / cover;
+    background: url("../public/yosemite.webp") no-repeat scroll 70% 90% / cover;
     margin-bottom: 6px;
     z-index: -1;
     grid-column: 1;

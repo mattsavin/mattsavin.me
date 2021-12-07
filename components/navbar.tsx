@@ -29,7 +29,8 @@ const Navbar: NextPage = (): JSX.Element => {
                     </a>
                 </Link>
 
-                <button className={`inline-flex lg:hidden ml-auto outline-none ${styles.expandButton}`}>
+                <button className={`inline-flex lg:hidden ml-auto outline-none ${styles.expandButton}`}
+                    aria-label={"Open Nav Pane"}>
                     <a onClick={showSidebar}
                         className={styles.expandButton}>
                         <svg

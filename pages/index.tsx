@@ -169,9 +169,15 @@ const Home: NextPage = () => {
                 </section>
                 <section className={styles.stillInterested}>
                     <h1 className={styles.interestHeader}>Still interested?</h1>
-                    <h2>
+                    <h2 className={styles.interestLink}>
                         <Link href={"/about"}>
-                            <a>Read more about this website</a>
+                            <a>Read more about my website</a>
+                        </Link>
+                    </h2>
+                    <p>or</p>
+                    <h2 className={styles.interestLink}>
+                        <Link href={"/blog"}>
+                            <a>Read my blog</a>
                         </Link>
                     </h2>
                 </section>

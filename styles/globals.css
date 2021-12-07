@@ -42,7 +42,7 @@ a:hover {
 }
 
 body {
-    background-color: var(--bg-color);
+    background: var(--bg-color);
 }
 
 button {

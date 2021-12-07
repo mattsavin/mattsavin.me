@@ -169,6 +169,13 @@
     background-color: dimgrey;
 }
 
+.stillInterested {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10rem 0;
+}
+
 @media only screen and (min-width: 688px) {
     .about {
         margin: 3rem;

@@ -5,6 +5,7 @@ import type {NextPage} from "next"; // NextPage type for TypeScript type-checkin
 import Head from "next/head"; // Used to modify HTML <head> element - providing page metadata
 import styles from "./index.module.css"; // Import CSS styles from corresponding CSS module
 import Image from "next/image"; // Used for displaying images
+import Link from "next/link"; // used for internal links between pages
 
 // Imports for various images used on the page
 import climbing from "../public/climbing.webp";
@@ -165,6 +166,14 @@ const Home: NextPage = () => {
                             <p>A* Predicted Grades</p>
                         </span>
                     </div>
+                </section>
+                <section className={styles.stillInterested}>
+                    <h1>Still interested?</h1>
+                    <h2>
+                        <Link href={"/about"}>
+                            <a>Read more about this website</a>
+                        </Link>
+                    </h2>
                 </section>
             </main>
         </>

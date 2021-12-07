@@ -1,14 +1,19 @@
-import {NextPage} from "next";
-import Head from "next/head";
-import styles from "./index.module.css";
-import Image from "next/image";
+// TODO: Comment this file
+
+// Importing required libraries and components
+import type {NextPage} from "next"; // NextPage type for TypeScript type-checking
+import Head from "next/head"; // Used to modify HTML <head> element - providing page metadata
+import styles from "./index.module.css"; // Import CSS styles from corresponding CSS module
+import Image from "next/image"; // Used for displaying images
+
+// Imports for various images used on the page
 import climbing from "../public/climbing.png";
 import yosemite from "../public/yosemite.png";
 import white_zigzag_img from "../public/white_zigzag.png";
 import black_zigzag_img from "../public/black_zigzag.png";
 
 const Home: NextPage = () => {
-    let zigzagTop: JSX.Element, zigzagBottom: JSX.Element;
+    let zigzagTop: JSX.Element, zigzagBottom: JSX.Element; // Declaring
 
     if (process.browser && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         zigzagTop = (
@@ -144,5 +149,3 @@ const Home: NextPage = () => {
 };
 
 export default Home;
-
-// TODO: create sitemap.xml

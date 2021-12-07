@@ -1,3 +1,5 @@
+// TODO: Comment this file
+
 import Link from 'next/link';
 import Image from 'next/image';
 import React, {useState} from "react";

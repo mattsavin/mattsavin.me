@@ -1,3 +1,5 @@
+// TODO: Comment this file
+
 import {NextPage} from "next";
 import Router from "next/router";
 import {useEffect, useState} from "react";

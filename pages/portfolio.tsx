@@ -9,7 +9,7 @@ const Portfolio: NextPage = () => {
     useEffect(() => {
         const {pathname} = Router;
 
-        if(pathname == "/portfolio"){
+        if(pathname == "/portfolio" && process.env.NODE_ENV == "production"){
             Router.push("/construction");
         }else{
             setLoaded(true);

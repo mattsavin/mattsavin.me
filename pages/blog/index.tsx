@@ -7,7 +7,7 @@ const Blog: NextPage = () => {
     useEffect(() => {
         const {pathname} = Router;
 
-        if(pathname == "/blog"){
+        if(pathname == "/blog" && process.env.NODE_ENV == "production"){
             Router.push("/construction");
         }else{
             setLoaded(true);

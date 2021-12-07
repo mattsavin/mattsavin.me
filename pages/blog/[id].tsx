@@ -10,7 +10,7 @@ const Blog: NextPage = () => {
     useEffect(() => {
         const {pathname} = Router;
 
-        if(pathname == `/blog/[id]`){
+        if(pathname == "/blog/[id]" && process.env.NODE_ENV == "production"){
             Router.push("/construction");
         }else{
             setLoaded(true);

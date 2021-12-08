@@ -117,7 +117,7 @@ const Home: NextPage = () => {
                                     </span>
                                     <span className={styles.aboutParagraph}>
                                         <p>
-                                            Born and raised in Berkshire, I&#39;ve always had a passion for computers.
+                                            I&#39;ve lived in Berkshire all my life, and from the very beginning I&#39;ve loved technology
                                             <br />
                                             I began simple programming with Python at age 7, and since then, my interest has only grown.
                                             Some of my first programs involved rudimentary experimentation with core
@@ -125,8 +125,7 @@ const Home: NextPage = () => {
                                             One of the more complex programs I was working on at the time involved
                                             simple user interface components with <code>JavaFX.Swing</code> to create a
                                             basic (and not very secure!) login window that replied with
-                                            &quot;<code>Hello, &#123;username&#125;</code>&quot;, replacing
-                                            <code>&#123;username&#125;</code> with the username they had been assigned.
+                                            &quot;<code>Hello, &#123;username&#125;</code>&quot;.
                                             <br />
                                             <br />
                                             Since then, my interests have developed into a deep love of Linux and all

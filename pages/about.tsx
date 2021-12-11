@@ -37,6 +37,7 @@ const About: NextPage = () => {
                             src={"/homepage-screenshot.png"}
                             width={"1440"}
                             height={"900"}
+                            alt={"Screenshot of website homepage"}
                         />
                     </div>
 

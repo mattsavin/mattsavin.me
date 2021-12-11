@@ -1,7 +1,7 @@
 // TODO: Comment this file
 
 import {NextPage} from "next";
-import styles from "./about.module.css";
+import styles from "../styles/about.module.css";
 import Router from "next/router";
 import {useEffect, useState} from "react";
 import Link from "next/link";
@@ -25,10 +25,12 @@ const About: NextPage = () => {
     return (
         <>
             <main className={styles.main}>
-                <h1 className={styles.title}>About mattsavin.me</h1>
+                <h1 className={styles.title}>About My Website</h1>
+
                 <div className={styles.article}>
                     <div className={styles.intro}>
-                        Matthew Savin · Dec 11
+                        <h2 className={styles.intro}>All the technical details</h2>
+                        <h4 className={styles.author}>Matthew Savin · Dec 11 2021</h4>
                     </div>
                     <div className={styles.image}>
                         <Image
@@ -143,7 +145,7 @@ const About: NextPage = () => {
                     <div className={styles.section}>
                         <h2 className={styles.subheading}>More about this site&#39;s domain</h2>
                         <p>
-                        The website (https://mattsavin.me/) is registered with Namecheap, configured to use Cloudflare&#39;s
+                        The website (<Link href={"/"}><a>https://mattsavin.me/</a></Link>) is registered with Namecheap, configured to use Cloudflare&#39;s
                         DNS servers, analytics tools, DNSSEC signing, SSL certificates, HSTS enforcing and TLS cipher enforcing.
                         SSL certificates, HSTS and TLS can also be managed with certbot to generate and store certificates managed by
                         Let&#39;s Encrypt, if needed.

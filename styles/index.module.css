@@ -123,6 +123,7 @@
 }
 
 .statsContainer {
+    margin-top: -2px;
     min-height: 30vh;
     display: flex;
     flex-direction: column;

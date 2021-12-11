@@ -29,8 +29,18 @@
 
 .intro {
     width: 100%;
-    margin-right: 24px;
-    margin-left: 24px;
+    margin: 1rem 24px;
+}
+
+.intro h2 {
+    font-size: 1.25rem;
+    width: unset;
+    margin: unset;
+}
+
+.author {
+    padding: 1rem 0;
+    font-size: 0.75rem;
 }
 
 .subheading {
@@ -42,10 +52,24 @@
     .article {
         margin-left: auto;
         margin-right: auto;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 
     .section, .intro {
         font-size: 20px;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .intro h2 {
+        font-size: 1.75rem;
+    }
+
+    .author {
+        font-size: 1rem;
     }
 }
 

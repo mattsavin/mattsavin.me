@@ -154,7 +154,7 @@ const Home: NextPage = () => {
                         </span>
 
                         <span className={styles.stat}>
-                            <h2>600+</h2>
+                            <h2>700+</h2>
                             <div className={styles.statDivider} />
                             <p>Open Source Contributions</p>
                         </span>

@@ -1,3 +1,57 @@
+.main {
+    padding: 2rem 0 2rem 0;
+}
+
 .article {
-    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 680px;
+    margin: 0 24px 0 24px;
+}
+
+.article p {
+    font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.section, .intro {
+    margin: 0.5rem 0 0.5rem 0;
+    font-size: 18px;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.intro {
+    width: 100%;
+    margin-right: 24px;
+    margin-left: 24px;
+}
+
+.subheading {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 688px) {
+    .article {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section, .intro {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1312px) {
+
 }

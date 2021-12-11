@@ -6,7 +6,6 @@ import Head from "next/head"; // Used to modify HTML <head> element - providing 
 import styles from "./index.module.css"; // Import CSS styles from corresponding CSS module
 import Image from "next/image"; // Used for displaying images
 import Link from "next/link"; // used for internal links between pages
-
 // Imports for various images used on the page
 import climbing from "../public/climbing.webp";
 import white_zigzag_img from "../public/white_zigzag.webp";

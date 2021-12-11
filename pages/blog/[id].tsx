@@ -2,8 +2,7 @@
 
 import {NextPage} from "next";
 import {useEffect, useState} from "react";
-import { useRouter } from 'next/router';
-import Router from "next/router";
+import Router, {useRouter} from 'next/router';
 
 const Blog: NextPage = () => {
     const router = useRouter();

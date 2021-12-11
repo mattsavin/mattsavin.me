@@ -3,7 +3,7 @@
 import {NextPage} from "next";
 import Head from "next/head";
 import styles from "./portfolio.module.css";
-import {useState, useEffect} from "react";
+import {useEffect, useState} from "react";
 import Router from "next/router";
 
 const Portfolio: NextPage = () => {

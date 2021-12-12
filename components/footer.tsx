@@ -2,7 +2,9 @@
 
 import {NextPage} from "next";
 import styles from "../styles/footer.module.css";
+import Link from "next/link";
 import { SiNextdotjs } from "react-icons/si";
+import { BsHeartFill } from "react-icons/bs";
 
 const Footer: NextPage = () => {
     if (process.env.NODE_ENV == "production") {
@@ -30,9 +32,16 @@ const Footer: NextPage = () => {
                             </span>
                             <span className={styles.footerSection}>
                                 <h2>Made with&nbsp;
-                                    <a href={"https://nextjs.org/"} className={styles.inlineIcon}>
-                                        <SiNextdotjs />
+                                    <a
+                                        href={"https://nextjs.org/"}
+                                        className={styles.inlineIcon}
+                                        target={"_blank"}
+                                        rel={"noreferrer"}
+                                    >
+                                        <SiNextdotjs className={styles.inlineIcon}/>
                                     </a>
+                                    &nbsp;&&nbsp;
+                                    <BsHeartFill className={`${styles.inlineIcon} ${styles.redIcon}`} />
                                     &nbsp;by Matthew Savin</h2>
                             </span>
                             <div className={styles.rowGroup}>
@@ -41,6 +50,15 @@ const Footer: NextPage = () => {
                                         <a href={"mailto:matt.asavin@gmail.com"}>
                                         Get in Contact
                                         </a>
+                                    </h1>
+                                </span>
+                                <span className={`${styles.rowSection} ${styles.footerSection}`}>
+                                    <h1>
+                                        <Link href={"/terms"}>
+                                            <a>
+                                            Terms
+                                            </a>
+                                        </Link>
                                     </h1>
                                 </span>
                             </div>

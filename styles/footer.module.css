@@ -79,6 +79,11 @@
     display: inline-flex;
     text-decoration: none;
     color: var(--footer-text-color);
+    vertical-align: middle;
+}
+
+.redIcon {
+    color: #a83232;
 }
 
 .tempFooter {

@@ -9,9 +9,8 @@ const About: NextPage = () => {
     return (
         <>
             <main className={styles.main}>
-                <h1 className={styles.title}>About My Website</h1>
-
                 <div className={styles.article}>
+                    <h1 className={styles.title}>About My Website</h1>
                     <div className={styles.intro}>
                         <h2 className={styles.intro}>All the technical details</h2>
                         <h4 className={styles.author}>Matthew Savin · Dec 11 2021</h4>

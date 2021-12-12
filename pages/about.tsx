@@ -1,7 +1,7 @@
 // TODO: Comment this file
 
 import {NextPage} from "next";
-import styles from "../styles/about.module.css";
+import styles from "../styles/blogpost.module.css";
 import Router from "next/router";
 import {useEffect, useState} from "react";
 import Link from "next/link";
@@ -148,7 +148,7 @@ const About: NextPage = () => {
                     <div className={styles.section}>
                         <h2 className={styles.subheading}>More about this site&#39;s domain</h2>
                         <p>
-                        The website (<Link href={"/"}><a>https://mattsavin.me/</a></Link>) is registered with Namecheap, configured to use Cloudflare&#39;s
+                        The website is registered with Namecheap, configured to use Cloudflare&#39;s
                         DNS servers, analytics tools, DNSSEC signing, SSL certificates, HSTS enforcing and TLS cipher enforcing.
                         SSL certificates, HSTS and TLS can also be managed with certbot to generate and store certificates managed by
                         Let&#39;s Encrypt, if needed.

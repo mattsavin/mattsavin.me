@@ -44,5 +44,3 @@ Amazon Web Services provide cloud computing and APIs to developers and companies
 ## More about this site's domain
 The website (https://mattsavin.me/) is registered with Namecheap, configured to use Cloudflare's DNS servers, analytics tools, DNSSEC signing, SSL certificates, HSTS enforcing and TLS cipher enforcing. SSL certificates, HSTS and TLS can also be managed with certbot to generate and store certificates managed by Let's Encrypt, if needed.
 Cloudflare also provides a firewall, anti-DDOS protection, and performance analysis to ensure the site stays up, no matter what.
-
-TODO: AWS, Email, internet.nl score 

@@ -37,14 +37,17 @@ const Footer: NextPage = () => {
                             </span>
                             <div className={styles.rowGroup}>
                                 <span className={`${styles.rowSection} ${styles.footerSection}`}>
-                                    <h1>Get in Contact</h1>
-                                </span>
-                                <span className={`${styles.rowSection} ${styles.footerSection}`}>
-                                    <h1>Links</h1>
+                                    <h1>
+                                        <a href={"mailto:matt.asavin@gmail.com"}>
+                                        Get in Contact
+                                        </a>
+                                    </h1>
                                 </span>
                             </div>
                             <span className={styles.footerBase}>
-                                <h1>mattsavin.me, All content &copy; 2021 Matthew Savin</h1>
+                                <h1>mattsavin.me, All content
+                                    <br />
+                                    &copy; 2021 Matthew Savin</h1>
                             </span>
                         </div>
                     </div>

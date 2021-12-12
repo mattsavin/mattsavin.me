@@ -39,6 +39,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+    text-underline-offset: 0.25rem;
 }
 
 body {
@@ -64,6 +65,11 @@ code {
     background: hsla(0, 0%, 100%, 0.2);
     border-radius: 4px;
     padding: 2px 5px;
+}
+
+svg {
+    margin-top: -0.1em;
+    vertical-align: middle;
 }
 
 @media (prefers-color-scheme: light) {

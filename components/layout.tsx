@@ -3,7 +3,7 @@
 import React from "react";
 import Navbar from "./navbar";
 import Footer from "./footer";
-import styles from "./layout.module.css";
+import styles from "../styles/layout.module.css";
 
 interface LayoutProps {
     children: React.ReactNode;

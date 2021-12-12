@@ -1,7 +1,7 @@
 // TODO: Comment this file
 
 import {NextPage} from "next";
-import styles from "./footer.module.css";
+import styles from "../styles/footer.module.css";
 
 const Footer: NextPage = () => {
     if (process.env.NODE_ENV == "production") {

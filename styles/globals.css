@@ -56,6 +56,15 @@ p, h1, h2, h3, h4, h5, h6 {
     font-family: var(--fonts);
 }
 
+p {
+    line-height: 28px;
+}
+
+code {
+    background: hsla(0, 0%, 100%, 0.2);
+    border-radius: 4px;
+    padding: 2px 5px;
+}
 
 @media (prefers-color-scheme: light) {
     .brand {

@@ -87,18 +87,6 @@
     color: #a83232;
 }
 
-.tempFooter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--footer-bg-color);
-    color: var(--footer-text-color);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;
-}
-
 @media only screen and (min-width: 688px) {
     .footer {
         font-size: 1rem;

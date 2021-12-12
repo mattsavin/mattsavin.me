@@ -49,6 +49,10 @@
     font-weight: 600;
 }
 
+.image {
+    margin-bottom: 1rem;
+}
+
 .separator {
     display: inline-flex;
     background: var(--text-color);

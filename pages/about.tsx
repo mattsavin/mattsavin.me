@@ -2,26 +2,10 @@
 
 import {NextPage} from "next";
 import styles from "../styles/blogpost.module.css";
-import Router from "next/router";
-import {useEffect, useState} from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 const About: NextPage = () => {
-    const [loaded, setLoaded] = useState(false);
-    useEffect(() => {
-        const {pathname} = Router;
-
-        if(pathname == "/about" && process.env.NODE_ENV == "production"){
-            Router.push("/construction");
-        }else{
-            setLoaded(true);
-        }
-    },[]);
-
-    if(!loaded){
-        return <div />;
-    }
     return (
         <>
             <main className={styles.main}>
@@ -83,6 +67,14 @@ const About: NextPage = () => {
                         TypeScript trans-compiles directly to JavaScript via the <code>tsc</code> compiler, itself written in TypeScript.
                         </p>
                     </div>
+                    <div className={styles.image}>
+                        <Image
+                            src={"/typescript-screenshot.png"}
+                            width={1440}
+                            height={900}
+                            alt={"Screenshot of Typescript homepage"}
+                        />
+                    </div>
                     <div className={styles.section}>
                         <h2 className={styles.subheading}>More about React</h2>
                         <p>
@@ -114,6 +106,15 @@ const About: NextPage = () => {
                         free and open source software.
                         </p>
                     </div>
+                    <div className={styles.image}>
+                        <Image
+                            src={"/nextjs-screenshot.png"}
+                            width={1440}
+                            height={900}
+                            alt={"Screenshot of the Next.js homepage"}
+                        />
+                    </div>
+
                     <div className={styles.section}>
                         <h2 className={styles.subheading}>More about Nginx</h2>
                         <p>
@@ -155,6 +156,14 @@ const About: NextPage = () => {
                         Cloudflare also provides a firewall, anti-DDOS protection, and performance analysis to ensure the
                         site stays up, no matter what.
                         </p>
+                    </div>
+                    <div className={styles.image}>
+                        <Image
+                            src={"/site-security-screenshot.png"}
+                            width={1440}
+                            height={900}
+                            alt={"Screenshot of Typescript homepage"}
+                        />
                     </div>
                     <div role={"separator"}>
                         <span className={styles.separator} />

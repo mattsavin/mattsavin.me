@@ -1,3 +1,5 @@
+declare const window:any;
+
 export const GA_TRACKING_ID: any = process.env.FIREBASE_MEASUREMENT_ID;
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages

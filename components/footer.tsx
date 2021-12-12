@@ -20,7 +20,13 @@ const Footer: NextPage = () => {
                     <div className={styles.footer}>
                         <div className={styles.columnGroup}>
                             <span className={styles.footerSection}>
-                                <h2>Found an issue with this page? <a href={"https://github.com/lamitron/mattsavin.me/"}>Fix it on GitHub</a></h2>
+                                <h2>Found an issue with this page? <a
+                                    href={"https://github.com/lamitron/mattsavin.me/"}
+                                    target={"_blank"}
+                                    rel={"noreferrer"}
+                                >
+                                    Fix it on GitHub
+                                </a></h2>
                             </span>
                             <span className={styles.footerSection}>
                                 <h2>Made with&nbsp;

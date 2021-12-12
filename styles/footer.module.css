@@ -23,6 +23,7 @@
 }
 
 .footer {
+    font-size: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,7 +100,9 @@
 }
 
 @media only screen and (min-width: 688px) {
-
+    .footer {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (min-width: 992px) {

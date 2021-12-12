@@ -3,7 +3,7 @@
 import {NextPage} from "next";
 import styles from "../styles/footer.module.css";
 import Link from "next/link";
-import { SiNextdotjs } from "react-icons/si";
+import {SiNextdotjs, SiReact} from "react-icons/si";
 import { BsHeartFill } from "react-icons/bs";
 
 const Footer: NextPage = () => {
@@ -39,6 +39,14 @@ const Footer: NextPage = () => {
                                         rel={"noreferrer"}
                                     >
                                         <SiNextdotjs className={styles.inlineIcon}/>
+                                    </a>&nbsp;
+                                    <a
+                                        href={"https://reactjs.org/"}
+                                        className={styles.inlineIcon}
+                                        target={"_blank"}
+                                        rel={"noreferrer"}
+                                    >
+                                        <SiReact className={styles.inlineIcon}/>
                                     </a>
                                     &nbsp;&&nbsp;
                                     <BsHeartFill className={`${styles.inlineIcon} ${styles.redIcon}`} />

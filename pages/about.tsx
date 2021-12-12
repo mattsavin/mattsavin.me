@@ -139,9 +139,11 @@ const About: NextPage = () => {
                     </div>
                     <div className={styles.section}>
                         <h2 className={styles.subheading}>More about AWS</h2>
-                    Amazon Web Services provide cloud computing and APIs to developers and companies, of which my primary
-                    use is Elastic Cloud Computer (EC2), in which I am running an instance of Ubuntu Server 20.04 LTS,
-                    configured with an Elastic IP for use with DNS nameservers.
+                        <p>
+                            Amazon Web Services provide cloud computing and APIs to developers and companies, of which my primary
+                            use is Elastic Cloud Computer (EC2), in which I am running an instance of Ubuntu Server 20.04 LTS,
+                            configured with an Elastic IP for use with DNS nameservers.
+                        </p>
                     </div>
                     <div className={styles.section}>
                         <h2 className={styles.subheading}>More about this site&#39;s domain</h2>
@@ -154,8 +156,10 @@ const About: NextPage = () => {
                         site stays up, no matter what.
                         </p>
                     </div>
+                    <div role={"separator"}>
+                        <span className={styles.separator} />
+                    </div>
                 </div>
-                TODO: AWS, Email, internet.nl score
             </main>
         </>
     );

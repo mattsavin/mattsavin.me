@@ -94,9 +94,7 @@
 }
 
 @media only screen and (min-width: 992px) {
-    .footerGroup {
-        flex-direction: row;
-    }
+
 }
 
 @media only screen and (min-width: 1312px) {

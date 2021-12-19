@@ -1,13 +1,17 @@
 {
   "extends": [
     "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
     "eslint:recommended",
     "prettier"
   ],
   "rules": {
     "semi": "error",
     "indent": ["error", 4],
-    "strict": "error"
+    "strict": "error",
+    "prefer-const": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any": "error"
   },
   "globals": {
     "React": true,
@@ -21,18 +25,6 @@
     "jsdom": true,
     "JSX": true
   },
-  "overrides": [
-    {
-      "files": ["*.ts", "*.tsx"], // Your TypeScript files extension
-      "parserOptions": {
-        "project": ["tsconfig.json"]
-      }
-    }
-  ],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-      "project": "tsconfig.json"
-    },
   "ignorePatterns": [
     "*.config.js"
   ]

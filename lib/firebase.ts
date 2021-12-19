@@ -1,5 +1,4 @@
-/*import { initializeApp } from "firebase/app";
-import { getAnalytics } from "@firebase/analytics";
+import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
     apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -12,6 +11,5 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics();
-*/
-export {};
+
+export default app;

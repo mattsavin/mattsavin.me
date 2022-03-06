@@ -64,7 +64,7 @@ const Footer: NextPage = () => {
                         <span className={styles.footerBase}>
                             <h1>mattsavin.me, All content
                                 <br />
-                                    &copy; 2021 Matthew Savin</h1>
+                                    &copy; 2022 Matthew Savin</h1>
                         </span>
                     </div>
                 </div>

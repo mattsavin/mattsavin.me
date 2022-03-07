@@ -12,10 +12,10 @@ import white_zigzag_img from "../public/white_zigzag.webp";
 import black_zigzag_img from "../public/black_zigzag.webp";
 
 const Home: NextPage = () => {
-    let zigzagTop: JSX.Element, zigzagBottom: JSX.Element; // Declaring
+    let zigzagBlack: JSX.Element, zigzagWhite: JSX.Element; // Naming assumes light theme
 
     if (process.browser && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        zigzagTop = (
+        zigzagBlack = (
             <Image
                 className={styles.zigzag}
                 src={white_zigzag_img}
@@ -23,7 +23,7 @@ const Home: NextPage = () => {
             />
         );
     } else {
-        zigzagTop = (
+        zigzagBlack = (
             <Image
                 className={styles.zigzag}
                 src={black_zigzag_img}
@@ -33,7 +33,7 @@ const Home: NextPage = () => {
     }
 
     if (process.browser && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        zigzagBottom = (
+        zigzagWhite = (
             <Image
                 className={styles.zigzag}
                 src={black_zigzag_img}
@@ -41,7 +41,7 @@ const Home: NextPage = () => {
             />
         );
     } else {
-        zigzagBottom = (
+        zigzagWhite = (
             <Image
                 className={styles.zigzag}
                 src={white_zigzag_img}
@@ -78,7 +78,7 @@ const Home: NextPage = () => {
                 <section className={styles.mainHeader}>
                     <div className={styles.headingLeft}>
                         <div className={styles.zigzag} >
-                            {zigzagTop}
+                            {zigzagBlack}
                         </div>
                         <span>
                             <h1>Hi! I&#39;m&nbsp;
@@ -143,7 +143,7 @@ const Home: NextPage = () => {
                 </section>
                 <section className={styles.statsContainer}>
                     <div className={styles.zigzag}>
-                        {zigzagBottom}
+                        {zigzagWhite}
                     </div>
                     <div className={styles.stats}>
                         <span className={styles.stat}>

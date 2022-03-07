@@ -6,32 +6,14 @@ import Head from "next/head"; // Used to modify HTML <head> element - providing 
 import styles from "./index.module.css"; // Import CSS styles from corresponding CSS module
 import Image from "next/image"; // Used for displaying images
 import Link from "next/link"; // used for internal links between pages
+import LandingPage from "../components/landingPage";
 // Imports for various images used on the page
-import climbing from "../public/climbing.webp";
 import white_zigzag_img from "../public/white_zigzag.webp";
 import black_zigzag_img from "../public/black_zigzag.webp";
 
 const Home: NextPage = () => {
-    let zigzagBlack: JSX.Element, zigzagWhite: JSX.Element; // Naming assumes light theme
-
-    if (process.browser && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        zigzagBlack = (
-            <Image
-                className={styles.zigzag}
-                src={white_zigzag_img}
-                alt={""}
-            />
-        );
-    } else {
-        zigzagBlack = (
-            <Image
-                className={styles.zigzag}
-                src={black_zigzag_img}
-                alt={""}
-            />
-        );
-    }
-
+    let zigzagWhite: JSX.Element; // Naming assumes light theme
+    
     if (process.browser && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         zigzagWhite = (
             <Image
@@ -59,49 +41,9 @@ const Home: NextPage = () => {
                     content="About Matthew Savin: an aspiring and talented young computer scientist who has always had a passion for computers, currently studying in the United Kingdom at a Sixth Form in Berkshire"
                 />
             </Head>
-            <script type={"application/ld+json"} dangerouslySetInnerHTML={{
-                __html:
-                    `
-                        {
-                            "@context": "https://schema.org/",
-                            "@type": "NewsArticle",
-                            "headline": "About Me: Matthew Savin",
-                            "datePublished": "2021-12-06",
-                            "author": {
-                                "@type": "Person",
-                                "name": "Matthew Savin"
-                            }
-                        }
-                    `
-            }} />
+            <script type={"application/ld+json"} dangerouslySetInnerHTML={{__html:`{"@context": "https://schema.org/","@type": "NewsArticle","headline": "About Me: Matthew Savin","datePublished": "2021-12-06","author": {"@type": "Person","name": "Matthew Savin"}}`}}/>
             <main>
-                <section className={styles.mainHeader}>
-                    <div className={styles.headingLeft}>
-                        <div className={styles.zigzag} >
-                            {zigzagBlack}
-                        </div>
-                        <span>
-                            <h1>Hi! I&#39;m&nbsp;
-                                <span className={"brand"}>
-                                    Matthew
-                                </span>
-                                <br />
-                                    An aspiring young
-                                <br />
-                                computer scientist
-                            </h1>
-                        </span>
-                    </div>
-                    <div className={styles.headingRight}>
-                        <Image
-                            className={styles.climbing}
-                            alt={"Climbing"}
-                            src={climbing}
-                            width={810}
-                            height={456}
-                        />
-                    </div>
-                </section>
+                <LandingPage />
                 <section className={styles.description}>
                     <div className={styles.contrastingColor}>
                         <div className={styles.parent}>

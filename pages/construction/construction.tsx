@@ -2,9 +2,9 @@
 
 import type {NextPage} from 'next';
 import Head from 'next/head';
-import styles from "../styles/construction.module.css";
+import styles from "./construction.module.css";
 
-const Home: NextPage = (): JSX.Element => {
+const Construction: NextPage = (): JSX.Element => {
     return (
         <>
             <Head>
@@ -16,15 +16,15 @@ const Home: NextPage = (): JSX.Element => {
                 <h1 className={styles.title}>Under Construction!</h1>
 
                 <p className={styles.intro}>
-          This page is currently under construction!
+                    This page is currently under construction!
                     <br />
                     <br />
-          It is being built using client and server side rendering using <a href="https://nextjs.org/"
+                    It is being built using client and server side rendering using <a href="https://nextjs.org/"
                     >
                         Next.js
                     </a>
                     <br />
-          Come back later to see how it&#39;s progressed or check out the code on GitHub: <a
+                    Come back later to see how it&#39;s progressed or check out the code on GitHub: <a
                         href="https://github.com/lamitron/mattsavin.me"
                         target="_blank" rel="noreferrer"
                     >
@@ -38,4 +38,4 @@ const Home: NextPage = (): JSX.Element => {
     );
 };
 
-export default Home;
+export default Construction;

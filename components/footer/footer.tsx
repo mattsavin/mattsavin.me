@@ -1,7 +1,7 @@
 // TODO: Comment this file
 
 import {NextPage} from "next";
-import styles from "../styles/footer.module.css";
+import styles from "./footer.module.css";
 import Link from "next/link";
 import {SiNextdotjs, SiReact} from "react-icons/si";
 import { BsHeartFill } from "react-icons/bs";

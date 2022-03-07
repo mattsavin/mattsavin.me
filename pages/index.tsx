@@ -3,7 +3,7 @@
 // Importing required libraries and components
 import type {NextPage} from "next"; // NextPage type for TypeScript type-checking
 import Head from "next/head"; // Used to modify HTML <head> element - providing page metadata
-import styles from "../styles/index.module.css"; // Import CSS styles from corresponding CSS module
+import styles from "./index.module.css"; // Import CSS styles from corresponding CSS module
 import Image from "next/image"; // Used for displaying images
 import Link from "next/link"; // used for internal links between pages
 // Imports for various images used on the page
@@ -86,7 +86,7 @@ const Home: NextPage = () => {
                                     Matthew
                                 </span>
                                 <br />
-                                 An aspiring young
+                                    An aspiring young
                                 <br />
                                 computer scientist
                             </h1>

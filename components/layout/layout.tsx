@@ -1,9 +1,9 @@
 // TODO: Comment this file
 
 import React from "react";
-import Navbar from "./navbar";
-import Footer from "./footer";
-import styles from "../styles/layout.module.css";
+import Navbar from "../navbar";
+import Footer from "../footer/footer";
+import styles from "./layout.module.css";
 
 interface LayoutProps {
     children: React.ReactNode;

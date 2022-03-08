@@ -1,0 +1,97 @@
+.main {
+    padding: 2rem 0 2rem 0;
+    font-family: "Poppins", serif;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 680px;
+    margin: 0 24px 0 24px;
+}
+
+.article p {
+    font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;
+    line-height: 34px;
+}
+
+.section, .intro {
+    margin: 0.5rem 0 0.5rem 0;
+    font-size: 18px;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.intro {
+    width: 100%;
+    margin: 1rem 24px;
+}
+
+.intro h2 {
+    font-size: 1.25rem;
+    width: unset;
+    margin: unset;
+}
+
+.author {
+    padding: 1rem 0;
+    font-size: 0.75rem;
+}
+
+.subheading {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.image {
+    margin-bottom: 1rem;
+}
+
+.separator {
+    display: inline-flex;
+    background: var(--text-color);
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    margin-top: 2em;
+    margin-bottom: 7.5em;
+}
+
+@media only screen and (min-width: 688px) {
+    .article {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .section, .intro {
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .intro h2 {
+        font-size: 1.75rem;
+    }
+
+    .author {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1312px) {
+
+}

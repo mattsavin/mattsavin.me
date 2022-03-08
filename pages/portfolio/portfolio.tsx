@@ -2,7 +2,7 @@
 
 import {NextPage} from "next";
 import Head from "next/head";
-import styles from "../styles/portfolio.module.css";
+import styles from "./portfolio.module.css";
 import {useEffect, useState} from "react";
 import Router from "next/router";
 

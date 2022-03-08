@@ -1,7 +1,7 @@
 // TODO: Comment this file
 
 import {NextPage} from "next";
-import styles from "../styles/blogpost.module.css";
+import styles from "./about.module.css";
 import Link from "next/link";
 import Image from "next/image";
 

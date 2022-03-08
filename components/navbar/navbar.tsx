@@ -3,8 +3,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import React, {useState} from "react";
-import lamitron from "../public/lamitron_black_on_circle.webp";
-import styles from "../styles/navbar.module.css";
+import lamitron from "../../public/lamitron_black_on_circle.webp";
+import styles from "./navbar.module.css";
 import {NextPage} from "next";
 
 const Navbar: NextPage = (): JSX.Element => {

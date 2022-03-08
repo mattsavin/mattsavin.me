@@ -1,4 +1,4 @@
-import styles from "../styles/404.module.css";
+import styles from "./404.module.css";
 import Link from "next/link";
 
 const Custom404 = () => {

@@ -31,7 +31,7 @@ const AboutComponent = (): JSX.Element => {
                                             things open-source since I first used a Raspberry Pi at age 8, just one short
                                             year after the Model B&#39;s initial release. I still use Raspberry Pis and
                                             Linux regularly to this day - my operating system of choice is currently a mix of
-                                            Arch Linux, Windows and macOS, and I use a Raspberry Pi to host films and video for me
+                                            Arch Linux, Windows and macOS via a Hackintosh, and I use a Raspberry Pi to host films and video for me
                                             and my family to watch using Plex, as well as for a Samba storage server.
                                 </p>
                             </span>

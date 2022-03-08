@@ -23,16 +23,16 @@ const AboutComponent = (): JSX.Element => {
                                             programming and computer science concepts such as selection and iteration.
                                             One of the more complex programs I was working on at the time involved
                                             simple user interface components with <code>JavaFX.Swing</code> to create a
-                                            basic (and not very secure!) login window that replied with
+                                            basic, insecure login window that replied with
                                             &quot;<code>Hello, &#123;username&#125;</code>&quot;.
                                     <br />
                                     <br />
                                             Since then, my interests have developed into a deep love of Linux and all
                                             things open-source since I first used a Raspberry Pi at age 8, just one short
                                             year after the Model B&#39;s initial release. I still use Raspberry Pis and
-                                            Linux regularly to this day - my daily driver operating system is currently
-                                            openSUSE Tumbleweed, and I use a Raspberry Pi to host films and video for me
-                                            and my family to watch using Plex, as well as a Samba storage server.
+                                            Linux regularly to this day - my operating system of choice is currently a mix of
+                                            Arch Linux, Windows and macOS, and I use a Raspberry Pi to host films and video for me
+                                            and my family to watch using Plex, as well as for a Samba storage server.
                                 </p>
                             </span>
                         </div>

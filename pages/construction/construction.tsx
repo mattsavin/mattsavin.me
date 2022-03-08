@@ -25,10 +25,10 @@ const Construction: NextPage = (): JSX.Element => {
                     </a>
                     <br />
                     Come back later to see how it&#39;s progressed or check out the code on GitHub: <a
-                        href="https://github.com/lamitron/mattsavin.me"
+                        href="https://github.com/mattsavin/mattsavin.me"
                         target="_blank" rel="noreferrer"
                     >
-                        lamitron/mattsavin.me
+                        mattsavin/mattsavin.me
                     </a>
                     <br />
             Pull requests are welcome and appreciated!

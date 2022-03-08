@@ -66,7 +66,7 @@ const Navbar: NextPage = (): JSX.Element => {
                         </Link>
                         <a
                             className={`${styles.link} lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center`}
-                            href="https://github.com/lamitron/mattsavin.me/"
+                            href="https://github.com/mattsavin/mattsavin.me/"
                             target="_blank"
                             rel="noreferrer"
                         >

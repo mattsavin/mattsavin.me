@@ -31,21 +31,15 @@ const StatsComponent = (): JSX.Element => {
             </div>
             <div className={styles.stats}>
                 <span className={styles.stat}>
-                    <h2>10+</h2>
+                    <h2>20+</h2>
                     <div className={styles.statDivider} />
                     <p>GitHub Repositories</p>
                 </span>
 
                 <span className={styles.stat}>
-                    <h2>700+</h2>
+                    <h2>1100+</h2>
                     <div className={styles.statDivider} />
                     <p>Open Source Contributions</p>
-                </span>
-
-                <span className={styles.stat}>
-                    <h2>4</h2>
-                    <div className={styles.statDivider} />
-                    <p>A* Predicted Grades</p>
                 </span>
             </div>
         </section>

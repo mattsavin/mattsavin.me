@@ -1,8 +1,9 @@
 // TODO: Comment this file
 
 import {NextPage} from "next";
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import Router, {useRouter} from 'next/router';
+import styles from './blogpost.module.css';
 
 const Blog: NextPage = () => {
     const router = useRouter();
@@ -23,9 +24,14 @@ const Blog: NextPage = () => {
     }
 
     return (
-        <>
-            <h1>Blog id {id}</h1>
-        </>
+        <React.Fragment>
+            <main className={styles.main}>
+                <div className={styles.article}>
+                    <h1 className={styles.title}>{id}</h1>
+                    <h1>Blog ID {id}</h1>
+                </div>
+            </main>            
+        </React.Fragment>
     );
 };
 

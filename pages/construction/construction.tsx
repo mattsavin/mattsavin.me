@@ -2,6 +2,7 @@
 
 import type {NextPage} from 'next';
 import Head from 'next/head';
+import React from 'react';
 import styles from "./construction.module.css";
 
 const Construction: NextPage = (): JSX.Element => {

@@ -8,6 +8,8 @@ import { BsHeartFill } from "react-icons/bs";
 import React from "react";
 
 const Footer: NextPage = () => {
+    const date = new Date();
+
     return (
         <React.Fragment>
             <footer className={styles.footerAbsolute}>
@@ -65,7 +67,7 @@ const Footer: NextPage = () => {
                         <span className={styles.footerBase}>
                             <h1>mattsavin.me, All content
                                 <br />
-                                    &copy; 2022 Matthew Savin</h1>
+                                    &copy; {date.getFullYear()} Matthew Savin</h1>
                         </span>
                     </div>
                 </div>

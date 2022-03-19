@@ -35,6 +35,7 @@ const Contact: NextPage  = () => {
                     </div>
                 </div>
                 <div>
+                    <h2>Email me</h2>
                     <h2></h2>
                 </div>
             </main>

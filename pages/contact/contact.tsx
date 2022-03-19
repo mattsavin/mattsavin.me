@@ -35,8 +35,10 @@ const Contact: NextPage  = () => {
                     </div>
                 </div>
                 <div>
-                    <h2>Email me</h2>
-                    <h2></h2>
+                    <h2>Send me an email</h2>
+                    <h2>Chat with me on Discord</h2>
+                    <h2>Follow me on Twitter</h2>
+                    <h2>Come look at my GitHub</h2>
                 </div>
             </main>
         </React.Fragment>

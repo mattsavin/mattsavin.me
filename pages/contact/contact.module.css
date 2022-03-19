@@ -3,6 +3,12 @@
     font-family: "Poppins", serif;
 }
 
+.header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
 .headingLeft {
     display: flex;
     justify-content: center;
@@ -19,7 +25,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     font-weight: 700;
     color: var(--text-color);
     padding: 5rem 1rem;
@@ -44,5 +49,19 @@
 }
 
 @media only screen and (min-width: 1312px) {
+    .mainHeader{
+        flex-direction: row;
+    }
 
+    .headingLeft {
+        padding: 5rem;
+        float: left;
+        max-width: 50%;
+    }
+
+    .headingRight {
+        padding: 3rem;
+        float: right;
+        max-width: 50%;
+    }
 }

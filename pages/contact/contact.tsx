@@ -1,6 +1,7 @@
 import {NextPage} from "next";
 import React, {useEffect, useState} from "react";
 import Router from "next/router";
+import Head from "next/head";
 import styles from "./contact.module.css";
 
 const Contact: NextPage  = () => {
@@ -21,15 +22,21 @@ const Contact: NextPage  = () => {
 
     return (
         <React.Fragment>
+            <Head>
+                <title>Contact Me</title>
+            </Head>
             <main className={styles.main}>
-                <section className={styles.header}>
-                    <div className={styles.headingrLeft}>
-                        <h1 className={styles.title}>Get in touch</h1>
-                    </div>
-                    <div className={styles.headerRight}>
+                <div className={styles.mainHeader}>
+                    <div className={styles.headingLeft}>
 
                     </div>
-                </section>
+                    <div className={styles.headingRight}>
+                        <h1 className={styles.title}>Get in touch</h1>
+                    </div>
+                </div>
+                <div>
+                    <h2></h2>
+                </div>
             </main>
         </React.Fragment>
     );

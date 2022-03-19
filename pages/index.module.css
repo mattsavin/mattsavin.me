@@ -41,10 +41,10 @@
     min-width: 50%;
 }
 .headingRight {
-    padding: 0 0 5rem 0;
     display:flex;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 5rem 0;
     z-index: 0;
     min-width: 50%;
 }

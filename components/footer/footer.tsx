@@ -5,10 +5,11 @@ import styles from "./footer.module.css";
 import Link from "next/link";
 import {SiNextdotjs, SiReact} from "react-icons/si";
 import { BsHeartFill } from "react-icons/bs";
+import React from "react";
 
 const Footer: NextPage = () => {
     return (
-        <>
+        <React.Fragment>
             <footer className={styles.footerAbsolute}>
                 <div className={styles.footer}>
                     <div className={styles.columnGroup}>
@@ -70,7 +71,7 @@ const Footer: NextPage = () => {
                 </div>
                 <div className={styles.footerRelative}/>
             </footer>
-        </>
+        </React.Fragment>
     );
 };
 

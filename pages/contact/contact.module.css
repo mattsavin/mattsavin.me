@@ -1,0 +1,48 @@
+.main {
+    padding: 2rem 0 2rem 0;
+    font-family: "Poppins", serif;
+}
+
+.headingLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 700;
+    color: var(--text-color);
+    padding: 5rem 1rem;
+    font-size: 2.5rem;
+    min-width: 50%;
+}
+
+.headingRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 700;
+    color: var(--text-color);
+    padding: 5rem 1rem;
+    font-size: 2.5rem;
+    min-width: 50%;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 688px) {
+    .title {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (min-width: 1312px) {
+
+}

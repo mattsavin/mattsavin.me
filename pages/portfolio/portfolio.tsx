@@ -5,6 +5,7 @@ import Head from "next/head";
 import styles from "./portfolio.module.css";
 import {useEffect, useState} from "react";
 import Router from "next/router";
+import React from "react";
 
 const Portfolio: NextPage = () => {
     const [loaded, setLoaded] = useState(false);
@@ -22,7 +23,7 @@ const Portfolio: NextPage = () => {
         return <div />;
     }
     return(
-        <>
+        <React.Fragment>
             <Head>
                 <title>My Portfolio - Matthew Savin</title>
                 <meta name="description" content="Matthew Savin's Portfolio of Exemplar Work" />
@@ -30,7 +31,7 @@ const Portfolio: NextPage = () => {
             <main className={styles.main}>
                 <h1>My Activities</h1>
             </main>
-        </>
+        </React.Fragment>
     );
 };
 

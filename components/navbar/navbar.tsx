@@ -11,7 +11,7 @@ const Navbar: NextPage = (): JSX.Element => {
     const [sidebar, setSidebar] = useState(false);
     const showSidebar = () => setSidebar(!sidebar);
     return (
-        <>
+        <React.Fragment>
             <nav className={`m-0 sticky top-0 flex items-center flex-wrap p-3 ${styles.nav}`}>
                 <Link href='/'>
                     <a className={`inline-flex items-center p-2 mr-4 justify-center ${styles.logo}`}>
@@ -61,6 +61,9 @@ const Navbar: NextPage = (): JSX.Element => {
                         <Link href={"/about"}>
                             <a className={`${styles.link} lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center`}>About</a>
                         </Link>
+                        <Link href={"/contact"}>
+                            <a className={`${styles.link} lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center`}>Contact</a>
+                        </Link>
                         <Link href={"/blog"}>
                             <a className={`${styles.link} lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center`}>Blog</a>
                         </Link>
@@ -75,7 +78,7 @@ const Navbar: NextPage = (): JSX.Element => {
                     </div>
                 </div>
             </nav>
-        </>
+        </React.Fragment>
     );
 };
 

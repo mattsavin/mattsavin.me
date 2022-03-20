@@ -16,9 +16,9 @@ const AboutComponent = (): JSX.Element => {
                             </span>
                             <span className={styles.aboutParagraph}>
                                 <p>
-                                            I&#39;ve lived in Berkshire all my life, and from the very beginning I&#39;ve loved technology
+                                            I&#39;ve lived in Berkshire all my life, and from the very beginning I&#39;ve loved technology.
                                     <br />
-                                            I began simple programming with Python at age 7, and since then, my interest has only grown.
+                                            I began simple programming with Python at age 7 and since then my interest has only grown.
                                             Some of my first programs involved rudimentary experimentation with core
                                             programming and computer science concepts such as selection and iteration.
                                             One of the more complex programs I was working on at the time involved

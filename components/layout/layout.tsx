@@ -11,7 +11,7 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
     return (
-        <>
+        <React.Fragment>
             <Navbar />
             <main className={styles.pageContainer}>
                 <div className={styles.contentWrap}>
@@ -19,7 +19,7 @@ const Layout = ({ children }: LayoutProps) => {
                 </div>
                 <Footer />
             </main>
-        </>
+        </React.Fragment>
     );
 };
 export default Layout;

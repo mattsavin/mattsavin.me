@@ -4,10 +4,11 @@ import {NextPage} from "next";
 import styles from "./about.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import React from "react";
 
 const About: NextPage = () => {
     return (
-        <>
+        <React.Fragment>
             <main className={styles.main}>
                 <div className={styles.article}>
                     <h1 className={styles.title}>About My Website</h1>
@@ -169,7 +170,7 @@ const About: NextPage = () => {
                     </div>
                 </div>
             </main>
-        </>
+        </React.Fragment>
     );
 };
 

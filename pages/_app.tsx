@@ -8,7 +8,7 @@ import React from "react";
 
 function MyApp({ Component, pageProps }: AppProps) {
     return(
-        <>
+        <React.Fragment>
             <Head>
                 <title>Matthew Savin</title>
                 <meta charSet="UTF-8" />
@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             <Layout>
                 <Component {...pageProps} />
             </Layout>
-        </>
+        </React.Fragment>
     );
 }
 

@@ -2,11 +2,12 @@
 
 import type {NextPage} from 'next';
 import Head from 'next/head';
+import React from 'react';
 import styles from "./construction.module.css";
 
 const Construction: NextPage = (): JSX.Element => {
     return (
-        <>
+        <React.Fragment>
             <Head>
                 <title>Under Construction</title>
                 <meta name="description" content="mattsavin.me: Currently under construction!" />
@@ -34,7 +35,7 @@ const Construction: NextPage = (): JSX.Element => {
             Pull requests are welcome and appreciated!
                 </p>
             </main>
-        </>
+        </React.Fragment>
     );
 };
 

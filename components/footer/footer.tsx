@@ -5,10 +5,13 @@ import styles from "./footer.module.css";
 import Link from "next/link";
 import {SiNextdotjs, SiReact} from "react-icons/si";
 import { BsHeartFill } from "react-icons/bs";
+import React from "react";
 
 const Footer: NextPage = () => {
+    const date = new Date();
+
     return (
-        <>
+        <React.Fragment>
             <footer className={styles.footerAbsolute}>
                 <div className={styles.footer}>
                     <div className={styles.columnGroup}>
@@ -64,13 +67,16 @@ const Footer: NextPage = () => {
                         <span className={styles.footerBase}>
                             <h1>mattsavin.me, All content
                                 <br />
-                                    &copy; 2022 Matthew Savin</h1>
+                                {/* If you're reading this and you know who you are, 
+                                I appreciate immensely you changing this date lmfao
+                                I got this idea thanks to you anyway :) */}
+                                    &copy; {date.getFullYear()} Matthew Savin</h1>
                         </span>
                     </div>
                 </div>
                 <div className={styles.footerRelative}/>
             </footer>
-        </>
+        </React.Fragment>
     );
 };
 

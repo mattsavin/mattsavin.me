@@ -9,7 +9,7 @@ const Contact: NextPage  = () => {
     useEffect(() => {
         const {pathname} = Router;
 
-        if(pathname == "/construction" && process.env.NODE_ENV == "production"){
+        if(pathname == "/contact" && process.env.NODE_ENV == "production"){
             Router.push("/construction");
         }else{
             setLoaded(true);

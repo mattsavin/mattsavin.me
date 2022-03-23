@@ -67,9 +67,6 @@ const Footer: NextPage = () => {
                         <span className={styles.footerBase}>
                             <h1>mattsavin.me, All content
                                 <br />
-                                {/* If you're reading this and you know who you are, 
-                                I appreciate immensely you changing this date lmfao
-                                I got this idea thanks to you anyway :) */}
                                     &copy; {date.getFullYear()} Matthew Savin</h1>
                         </span>
                     </div>

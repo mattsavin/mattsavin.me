@@ -8,8 +8,8 @@ import styles from "./navbar.module.css";
 import {NextPage} from "next";
 
 const Navbar: NextPage = (): JSX.Element => {
-    const [sidebar, setSidebar] = useState(false);
-    const showSidebar = () => setSidebar(!sidebar);
+    const [active, setActive] = useState(false);
+    const openNavlinks = () => setActive(!active);
     return (
         <React.Fragment>
             <nav className={`m-0 sticky top-0 flex items-center flex-wrap p-3 ${styles.nav}`}>
@@ -31,7 +31,7 @@ const Navbar: NextPage = (): JSX.Element => {
 
                 <button className={`inline-flex lg:hidden ml-auto outline-none ${styles.expandButton}`}
                     aria-label={"Open Nav Pane"}>
-                    <a onClick={showSidebar}
+                    <a onClick={openNavlinks}
                         className={styles.expandButton}>
                         <svg
                             className={styles.svg}
@@ -51,7 +51,7 @@ const Navbar: NextPage = (): JSX.Element => {
                 </button>
 
                 <div className={`w-full lg:inline-flex lg:flex-grow lg:w-auto ${styles.menu}`}>
-                    <div className={`${sidebar ? styles.navlinks : styles.navlinksHidden} lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto`}>
+                    <div className={`${active ? styles.navlinks : styles.navlinksHidden} lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto`}>
                         <Link href='/'>
                             <a className={`${styles.link} lg:inline-flex lg:w-auto w-full px-3 py-2 rounded items-center justify-center`}>Home</a>
                         </Link>

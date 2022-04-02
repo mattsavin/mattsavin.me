@@ -75,6 +75,7 @@ svg {
         background: linear-gradient(90deg, #396afc, #2948ff );
         color: transparent;
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 }
@@ -84,6 +85,7 @@ svg {
         background: linear-gradient(90deg, #396afc, #2948ff );
         color: transparent;
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 }

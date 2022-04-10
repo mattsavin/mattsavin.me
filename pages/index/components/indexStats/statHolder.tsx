@@ -1,4 +1,4 @@
-import styles from "../../pages/index.module.css";
+import styles from "../../../index.module.css";
 
 const Stat = (props: any) => {
     return (

@@ -1,4 +1,4 @@
-import styles from "../../pages/index.module.css"; // Import CSS styles from corresponding CSS module
+import styles from "../../../index.module.css"; // Import CSS styles from corresponding CSS module
 
 const AboutComponent = (): JSX.Element => {
     return (

@@ -1,46 +1,61 @@
-.main {
+#main {
     padding: 2rem 0 2rem 0;
     font-family: "Poppins", serif;
 }
 
-.header {
+#header {
     display: flex;
     width: 100%;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
-
-.headingLeft {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+#headingRight {
     font-weight: 700;
     color: var(--text-color);
     padding: 5rem 1rem;
     font-size: 2.5rem;
-    min-width: 50%;
 }
 
-.headingRight {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
-    color: var(--text-color);
-    padding: 5rem 1rem;
-    font-size: 2.5rem;
-    min-width: 50%;
-}
-
-.title {
+#title {
     text-align: center;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 700;
+}
+
+#contactLinks {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactLink {
+    color: var(--text-color);
+    background: linear-gradient(90deg, #5680fc, #1639ff );
+    width: 17.5rem;
+    text-align: center;
+    border-radius: 5rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 2rem;
+    margin: 1rem;
+    transition: 0.2s ease;
+}
+
+.contactLink:hover {
+    text-decoration: none;
+    border-radius: 1rem;
+    transition: 0.2s ease;
 }
 
 @media only screen and (min-width: 688px) {
-    .title {
+    #title {
         font-size: 3rem;
+    }
+
+    .contactLink {
+        width: 25rem;
     }
 }
 
@@ -49,17 +64,17 @@
 }
 
 @media only screen and (min-width: 1312px) {
-    .mainHeader{
+    #header{
         flex-direction: row;
     }
 
-    .headingLeft {
+    #headingLeft {
         padding: 5rem;
         float: left;
         max-width: 50%;
     }
 
-    .headingRight {
+    #headingRight {
         padding: 3rem;
         float: right;
         max-width: 50%;

@@ -43,3 +43,5 @@ export const zigzagWhite = () => {
         );
     }
 };
+
+export default zigzagWhite;

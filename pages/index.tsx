@@ -19,8 +19,10 @@ const Home: NextPage = () => {
                     name="description"
                     content="About Matthew Savin: an aspiring and talented young computer scientist who has always had a passion for computers, currently studying in the United Kingdom at a Sixth Form in Berkshire"
                 />
+                <script type={"application/ld+json"}>
+                    {`{"@context": "https://schema.org/","@type": "NewsArticle","headline": "About Me: Matthew Savin","datePublished": "2021-12-06","author": {"@type": "Person","name": "Matthew Savin"}}`}
+                </script>
             </Head>
-            <script type={"application/ld+json"} dangerouslySetInnerHTML={{__html:`{"@context": "https://schema.org/","@type": "NewsArticle","headline": "About Me: Matthew Savin","datePublished": "2021-12-06","author": {"@type": "Person","name": "Matthew Savin"}}`}}/>
             <main>
                 <LandingPage />
                 <AboutComponent />

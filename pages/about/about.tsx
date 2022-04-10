@@ -5,10 +5,16 @@ import styles from "./about.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import Head from "next/head";
 
 const About: NextPage = () => {
     return (
         <React.Fragment>
+            <Head>
+                <script type={"application/ld+json"}>
+                    {`{"@context": "https://schema.org/","@type": "NewsArticle","headline": "About mattsavin.me","datePublished": "2021-12-11","author": {"@type": "Person","name": "Matthew Savin"}}`}
+                </script>
+            </Head>
             <main className={styles.main}>
                 <div className={styles.article}>
                     <h1 className={styles.title}>About My Website</h1>

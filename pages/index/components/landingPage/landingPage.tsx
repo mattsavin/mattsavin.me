@@ -1,8 +1,8 @@
 import Image from "next/image";
-import styles from "../../pages/index.module.css"; // Import CSS styles from corresponding CSS module
-import white_zigzag_img from "../../public/white_zigzag.webp";
-import black_zigzag_img from "../../public/black_zigzag.webp";
-import climbing from "../../public/climbing.webp";
+import styles from "../../../index.module.css"; // Import CSS styles from corresponding CSS module
+import white_zigzag_img from "../../../../public/white_zigzag.webp";
+import black_zigzag_img from "../../../../public/black_zigzag.webp";
+import climbing from "../../../../public/climbing.webp";
 
 
 const LandingPage = (): JSX.Element => {

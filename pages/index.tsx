@@ -4,10 +4,10 @@
 import type {NextPage} from "next"; // NextPage type for TypeScript type-checking
 import Head from "next/head"; // Used to modify HTML <head> element - providing page metadata
 import React from "react";
-import LandingPage from "../components/landingPage";
-import AboutComponent from "../components/indexAbout";
-import StatsComponent from "../components/indexStats";
-import CallToAction from "../components/indexCallToAction";
+import LandingPage from "./index/components/landingPage";
+import AboutComponent from "./index/components/indexAbout";
+import StatsComponent from "./index/components/indexStats";
+import CallToAction from "./index/components/indexCallToAction";
 
 const Home: NextPage = () => {
 

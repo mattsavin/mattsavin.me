@@ -1,10 +1,10 @@
 import Image from "next/image";
-import styles from "../../pages/index.module.css"; // Import CSS styles from corresponding CSS module
+import styles from "../../../index.module.css"; // Import CSS styles from corresponding CSS module
 
 import Stat from "./statHolder";
 
-import white_zigzag_img from "../../public/white_zigzag.webp";
-import black_zigzag_img from "../../public/black_zigzag.webp";
+import white_zigzag_img from "../../../../public/white_zigzag.webp";
+import black_zigzag_img from "../../../../public/black_zigzag.webp";
 
 const StatsComponent = (): JSX.Element => {
     let zigzagWhite: JSX.Element; // Naming assumes light theme

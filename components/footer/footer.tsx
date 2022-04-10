@@ -42,7 +42,7 @@ const Footer: NextPage = () => {
                                 >
                                     <SiReact className={styles.inlineIcon}/>
                                 </a>
-                                    &nbsp;&&nbsp;
+                                    &nbsp;&#38;&nbsp;
                                 <BsHeartFill className={`${styles.inlineIcon} ${styles.redIcon}`} />
                                     &nbsp;by Matthew Savin</h2>
                         </span>

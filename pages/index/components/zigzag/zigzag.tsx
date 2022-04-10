@@ -1,5 +1,5 @@
-import white_zigzag_img from "../public/white_zigzag.webp";
-import black_zigzag_img from "../public/black_zigzag.webp";
+import white_zigzag_img from "../../../../public/white_zigzag.png";
+import black_zigzag_img from "../../../../public/black_zigzag.webp";
 import styles from "./zigzag.module.css";
 import Image from "next/image";
 

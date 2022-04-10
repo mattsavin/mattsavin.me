@@ -39,8 +39,7 @@
 }
 
 #contactLinks {
-    display: flex;
-    flex-direction: column;
+    display: inline;
     align-items: center;
 }
 

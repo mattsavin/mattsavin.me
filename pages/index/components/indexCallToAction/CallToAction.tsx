@@ -6,8 +6,8 @@ const CallToAction = (): JSX.Element => {
         <section className={styles.stillInterested}>
             <h1 className={styles.interestHeader}>Still interested?</h1>
             <h2 className={styles.interestLink}>
-                <Link href={"/about"}>
-                    <a>Read more about my website</a>
+                <Link href={"/contact"}>
+                    <a>Get in touch</a>
                 </Link>
             </h2>
             <p>or</p>

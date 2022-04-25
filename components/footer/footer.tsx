@@ -49,7 +49,7 @@ const Footer: NextPage = () => {
                         <div className={styles.rowGroup}>
                             <span className={`${styles.rowSection} ${styles.footerSection}`}>
                                 <h1>
-                                    <a href={"mailto:matt.asavin@gmail.com"}>
+                                    <a href={"mailto:matt@mattsavin.me"}>
                                         Get in Contact
                                     </a>
                                 </h1>
